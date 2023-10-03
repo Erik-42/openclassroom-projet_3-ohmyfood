@@ -30,9 +30,9 @@ You can click the Preview link to take a look at your changes.
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <h1>OhMyFood!</h1>
+  <h1>OhMyFood</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./src/assets/images/Banner-Ohmyfood.png" alt="Bannière OhMyFood!" width="400" height="150">
+    <img src="./src/assets/images/Banner-Ohmyfood.png" alt="Bannière OhMyFood" width="400" height="150">
   </a>
 </div>
 
