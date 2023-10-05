@@ -171,80 +171,70 @@ header {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-.explorer button {
+.explorer .btn-explorer {
   color: white;
-  font-size: 1em;
-  background-color: #9356DC;
   background: linear-gradient(357deg, #9356DC 4%, #FF79DA 96%);
   border-radius: 25px;
   padding: 15px 20px 15px 20px;
   box-shadow: 0px 3px 5px 2px #c5c5c5;
-  cursor: pointer;
-  border: none;
+  transition-duration: 0.5s;
 }
-.explorer button:hover {
-  transition: 0.2s ease-in-out;
-  transform: scale(1.01);
-  box-shadow: 0px 0px 35px rgba(117, 117, 117, 0.5568627451);
+.explorer .btn-explorer:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 0.7;
 }
 
 .howTo {
-  margin: 40px 20px 40px 35px;
-}
-.howToh2 {
-  margin: 1rem 0rem 0rem 2rem;
-}
-@media (min-width: 767px) {
-  .howToh2 {
-    margin-left: 8%;
-    margin-right: 8%;
-  }
-}
-.howTo__step {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
+  margin: 1rem 0rem 2rem 0rem;
 }
-.howTo__step__card {
-  background-color: #f6f6f6;
-  padding: 30px 0 25px 0;
-  margin-bottom: 25px;
-  border-radius: 25px;
-  box-shadow: 0px 3px 5px 2px #e9e9e9;
+.howTo h2 {
+  font-size: larger;
+  font-weight: bold;
+  margin: 2rem 0rem 2rem 1rem;
+}
+.howTo__step {
+  font-size: large;
+  font-weight: bold;
   display: flex;
-  vertical-align: center;
-}
-.howTo__step__card#pinkCard {
-  background-color: #f5edff;
-}
-.howTo__step__card#pinkCard i {
-  color: #9356DC;
-}
-.howTo__step__card:hover {
-  transition: 0.2s ease-in-out;
-  transform: scale(1.01);
-  box-shadow: 0px 0px 35px rgba(117, 117, 117, 0.5568627451);
-}
-.howTo__step__card__bulle {
-  height: 25px;
-  width: 25px;
-  background-color: #9356DC;
-  border-radius: 50%;
-  margin-right: 10px;
-  margin-left: -14px;
-  color: white;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-.howTo__step__card__text {
-  font-weight: bold;
-  margin: 2px 0 0 15px;
+.howTo__step__one {
+  display: flex;
+  background-color: #f6f6f6;
+  margin-bottom: 25px;
+  border-radius: 25%;
+  box-shadow: 0px 3px 5px 2px #e9e9e9;
+  align-items: center;
+  padding: 30px 40px 30px 0px;
 }
-.howTo__step__card__text i {
-  color: #7e7e7e;
-  margin-right: 20px;
-  font-size: 19px;
+.howTo__step__one__num {
+  width: 25px;
+  height: 25px;
+  background: #9356DC;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: -15px;
+}
+.howTo__step__one__btn {
+  display: flex;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+}
+.howTo__step__one__btn__icone {
+  color: grey;
+  font-size: 24px;
+  margin: 0rem 2rem 0rem 1rem;
+}
+.howTo__step__one__btn__text {
+  margin: 2px 0 0 15px;
 }
 
 .restaurants {
@@ -296,9 +286,8 @@ header {
   margin-top: -10px;
 }
 .restaurants__list__card:hover {
-  transition: 0.2s ease-in-out;
-  transform: scale(1.01);
-  box-shadow: 0px 0px 35px rgba(117, 117, 117, 0.5568627451);
+  transition: 0.5s ease-in-out;
+  opacity: 0.7;
 }
 
 .footer {

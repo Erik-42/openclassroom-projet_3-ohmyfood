@@ -28,25 +28,22 @@ h1{
   font-weight: 550;
 }
 
-$color-primary: #9356DC;
-$color-secondary: #FF79DA;
-$color-tertiary: #99E2D0;
-$color-quatuary: #008766;
-$color-dark: #eaeaea;
-$color-light: #f6f6f6;
-$color-input: #525252;
-$color-white: white;
-$color-light-pink: #f5edff;
-$color-icons: #7e7e7e;
-$color-footer: #353535;
+$violet: #9356DC;
+$pink: #FF79DA;
+$vertClair: #99E2D0;
+$vert: #008766;
+$darkness: #eaeaea;
+$grisClair: #f6f6f6;
+$inputColor: #525252;
+$white: white;
+$lightPink: #f5edff;
+$grisMoyen: #7e7e7e;
+$footer: #353535;
+$gradient: linear-gradient($pink, $violet);
+$gradient2: linear-gradient($violet, lighten($violet, 10));
+$shadow: 0px 3px 5px 2px #e9e9e9;
 
-$shadow-light: 0px 3px 5px 2px #e9e9e9;
 
-@mixin hoverShadow {
-  transition: 0.2s ease-in-out;
-  transform: scale(1.01);
-  box-shadow: 0px 0px 35px #7575758e;
-}
 
 .mainLoader{
   height: 100%;
@@ -55,7 +52,7 @@ $shadow-light: 0px 3px 5px 2px #e9e9e9;
   -webkit-animation: loader 3s linear;
   animation: loader 2.5s linear;
   visibility: hidden;
-  background-color: $color-white;
+  background-color: $white;
   display: flex;
 }
 
@@ -82,7 +79,7 @@ $shadow-light: 0px 3px 5px 2px #e9e9e9;
 .circlesLoader{
   border-radius: 50px;
   border: 5px solid transparent;
-  border-top-color: $color-secondary;
+  border-top-color: $pink;
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
 }
@@ -96,7 +93,7 @@ $shadow-light: 0px 3px 5px 2px #e9e9e9;
   right: 7px;
   border-radius: 50px;
   border: 4px solid transparent;
-  border-top-color: $color-primary;
+  border-top-color: $violet;
   -webkit-animation: spin 10s linear infinite;
   animation: spin 10s linear infinite;
 }
@@ -110,7 +107,7 @@ $shadow-light: 0px 3px 5px 2px #e9e9e9;
   right: 20px;
   border-radius: 50px;
   border: 3px solid transparent;
-  border-top-color: $color-tertiary;
+  border-top-color: $vertClair;
   -webkit-animation: spin 5s linear infinite;
   animation: spin 5s linear infinite;
 }
@@ -132,12 +129,12 @@ header{
 }
 
 .citySearch {
-  background: $color-dark;
+  background: $darkness;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: inset 0px 3px 5px 0px #c5c5c5;
-  color:$color-input;
+  color:$inputColor;
   height: 4rem;
   font-size: large;
   i{
@@ -146,14 +143,14 @@ header{
   input{
     height: 85%;
     width: 65%;
-    background-color: $color-dark;
+    background-color: $darkness;
     border: none;
     font-weight: bold;
   }
 }
 
 .reservations{
-  background-color: $color-light;
+  background-color: $grisClair;
   padding: 1px 0 30px 0;
   & h1, p{
       text-align: center;
@@ -166,88 +163,128 @@ header{
   & p{
       margin: 15px 25px 15px 25px;
       font-size: 1.1em;
-      color: $color-input;
+      color: $inputColor;
   }
+}
+
+@mixin hoverShadow {
+  transition: 0.5s ease-in-out;
+  opacity: 0.7;
 }
 
 .explorer{
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
-  button{
-      color: $color-white;
-      font-size: 1em;
-      background-color: $color-primary;
-      background: linear-gradient(357deg, $color-primary 4%, $color-secondary 96%);
+  .btn-explorer{
+      color: $white;
+      background: linear-gradient(357deg, $violet 4%, $pink 96%);
       border-radius: 25px;
       padding: 15px 20px 15px 20px;
       box-shadow: 0px 3px 5px 2px #c5c5c5;
-      cursor: pointer;
-      border: none;
-      &:hover{
+      transition-duration: 0.5s;
+      &:hover{ 
           @include hoverShadow();
       }
   }
 }
 
 .howTo{
-  margin: 40px 20px 40px 35px;
-  &h2{
-    margin: 1rem 0rem 0rem 2rem;
-    @media (min-width: 767px){
-        margin-left: 8%;
-        margin-right: 8%;
-    }
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem 2rem 0rem;
+  h2{
+    font-size: larger;
+    font-weight: bold;
+    margin: 2rem 0rem 2rem 1rem;
   }
-  &__step{
-      margin-top: 30px;
+  &__step {
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__one{
       display: flex;
-      flex-direction: column;
-      &__card{
-          background-color: $color-light;
-          padding: 30px 0 25px 0;
-          margin-bottom: 25px;    
-          border-radius: 25px;
-          box-shadow: $shadow-light;
-          display: flex;
-          vertical-align: center;
-          &#pinkCard{
-              background-color: $color-light-pink;
-              i{
-                  color: $color-primary;
-              }
-          }
-          &:hover{
-              @include hoverShadow();
-          }
-          &__bulle{
-              height: 25px;
-              width: 25px;
-              background-color: $color-primary;
-              border-radius: 50%;
-              margin-right: 10px;
-              margin-left: -14px;
-              color: $color-white;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-          }
-          &__text{
-              font-weight: bold;
-              margin: 2px 0 0 15px;
-              i{
-                  color: $color-icons;
-                  margin-right: 20px;
-                  font-size: 19px;
-              }
-          }
+      background-color: $grisClair;
+      margin-bottom: 25px;
+      border-radius: 25% ;
+      box-shadow: $shadow;
+      align-items: center;
+      padding: 30px 40px 30px 0px;
+      &__num{
+        width: 25px;
+        height: 25px;
+        background: $violet;
+        color: $white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-left: -15px;
       }
-  }
+      &__btn{
+        display: flex;
+        align-items: center;
+        font-size: large;
+        font-weight: bold;
+        &__icone{
+          color: grey;
+          font-size: 24px;
+          margin: 0rem 2rem 0rem 1rem;
+        }
+        &__text{
+          margin: 2px 0 0 15px;
+        }
+      }
+    }
+    }
+  // &h2{
+  //   margin: 1rem 0rem 0rem 2rem;
+  //   @media (min-width: 767px){
+  //       margin-left: 8%;
+  //       margin-right: 8%;
+  //   }
+  // }
+  // &__step{
+  //     margin-top: 30px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     &__card{
+  //        
+  //         
+  //         margin-bottom: 25px;    
+  //         border-radius: 25px;
+  //        
+  //         
+  //         vertical-align: center;
+  //         &#pinkCard{
+  //             background-color: $grisClair;
+  //             i{
+  //                 color: $violet;
+  //             }
+  //         }
+  //         &:hover{
+  //             @include hoverShadow();
+  //         }
+  //       
+  //         &__text{
+  //             font-weight: bold;
+  //             margin: 2px 0 0 15px;
+  //             i{
+  //                 color: $grisMoyen;
+  //                 margin-right: 20px;
+  //                 font-size: 19px;
+  //             }
+  //         }
+  //     }
+  // }
 }
 
 .restaurants{
   padding: 30px 20px 30px 20px;
-  background-color: $color-light;
+  background-color: $grisClair;
   &__list{
       display: flex;
       flex-direction: column;
@@ -255,10 +292,10 @@ header{
           height: 260px;
           width: 100%;
           border-radius: 15px;
-          background-color: $color-white;
+          background-color: $white;
           border-radius: 15px;
           background-color : white;
-          box-shadow: $shadow-light;
+          box-shadow: $shadow;
           margin-bottom: 18px;
           text-decoration: none;
           color: black;
@@ -266,11 +303,11 @@ header{
               float: right;
           }
           span{
-              background-color: $color-tertiary;
+              background-color: $vertClair;
               margin: 11px -92px;
               padding: 5px 12px 5px 12px;
               position: absolute;
-              color: $color-quatuary;
+              color: $vert;
               border-radius: 4px;
               font-size: 0.9em;
           }
@@ -300,7 +337,7 @@ header{
 .footer{
   display: flex;
   flex-direction: column;
-  background-color: $color-footer;
+  background-color: $footer;
   color:white;
   align-items: flex-start;
   @media (min-width: 767px){
@@ -335,7 +372,7 @@ header{
 
 header i{
   text-decoration: none;
-  color: $color-footer;
+  color: $footer;
   position: absolute;
   left: 28px;
   top: 28px;
@@ -350,7 +387,7 @@ header i{
 }
 
 .restaurantsMenu{
-  background-color: $color-light;
+  background-color: $grisClair;
   border-radius: 50px 50px 0 0;
   position: relative;
   padding-bottom: 50px;
@@ -370,7 +407,7 @@ header i{
       margin: -10px 15px 0 15px;
       h2{
           text-transform: uppercase;
-          border-bottom: 3px solid $color-tertiary;
+          border-bottom: 3px solid $vertClair;
           padding-bottom: 5px;
           font-size: 1em;
           font-weight: 400;
@@ -381,9 +418,9 @@ header i{
           flex-direction: column;
           .checkItem{
               display: flex;
-              background-color: $color-white;
+              background-color: $white;
               border-radius: 20px;
-              box-shadow: $shadow-light;
+              box-shadow: $shadow;
               width: 100%;
               height: 60px;
               margin-bottom: 15px;
@@ -420,13 +457,13 @@ header i{
                   text-align: center;
                   width: 70px;
                   height: 60px;
-                  background-color: $color-tertiary;
+                  background-color: $vertClair;
                   border-radius: 0px 20px 20px 0px;
                   margin-right: -70px;
                   animation: slideout 0.4s;
                   i{
                       margin-top: 21px;
-                      color: $color-white;
+                      color: $white;
                       font-size: 1.2em;
                   }
               }
@@ -492,7 +529,7 @@ header i{
 }
 
 .fa-heart:hover, .fa-heart:focus{
-  background: linear-gradient(357deg, $color-primary 20%, $color-secondary 80%);
+  background: linear-gradient(357deg, $violet 20%, $pink 80%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-stroke: 0;
