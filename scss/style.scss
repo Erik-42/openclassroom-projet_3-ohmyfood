@@ -1,3 +1,4 @@
+@import "./pages/pages";
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -61,16 +62,6 @@ h2 {
 	--shadow: 0px 3px 5px 2px #e9e9e9;
 	--grisMoyen: #7e7e7e;
 }
-
-// $violet: #9356DC;
-// $pink: #FF79DA;
-// $vertClair: #99E2D0;
-// $vert: #008766;
-// $darkness: #eaeaea;
-// $grisClair: #f6f6f6;
-// $inputColor: #525252;
-// $lightPink: #f5edff;
-// $footer: #353535;
 
 header {
 	padding-top: 20px;
@@ -283,16 +274,4 @@ header {
 			width: 10px;
 		}
 	}
-}
-
-/* pages */
-header i {
-	position: absolute;
-	left: 28px;
-	top: 28px;
-	font-size: 1rem;
-}
-.imgBanner {
-	height: 200px;
-	width: 100%;
 }
