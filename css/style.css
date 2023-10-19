@@ -20,11 +20,13 @@ a {
   color: inherit;
 }
 
-h4, p {
+h4,
+p {
   margin: 0%;
 }
 
-ul, li {
+ul,
+li {
   text-decoration: none;
   list-style-type: none;
   padding: 0rem;
@@ -42,6 +44,30 @@ h2 {
   text-align: start;
 }
 
+:root {
+  --primary-color: #9356dc;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99e2d0;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --primary-bg-color: white;
+  --secondary-bg-color: #f6f6f6;
+  --footer-bg-color: #353535;
+  --primary-border-color: ;
+  --secondary-border-color: ;
+  --primary-hover-color: ;
+  --secondary-hover-color: ;
+  --newButton-bg-color: #99e2d0;
+  --newButton-text-color: #008766;
+  --input-bg-color: #eaeaea;
+  --input-text-color: #525252;
+  --gradient1: linear-gradient(#ff79da, #9356dc);
+  --gradient2: linear-gradient(#9356dc, lighten(#9356dc, 10));
+  --cal-color: linear-gradient(357deg, #9356dc 4%, #ff79da 96%);
+  --shadow: 0px 3px 5px 2px #e9e9e9;
+  --grisMoyen: #7e7e7e;
+}
+
 header {
   padding-top: 20px;
   padding-bottom: 10px;
@@ -49,12 +75,12 @@ header {
 }
 
 .citySearch {
-  background: #eaeaea;
+  background: var(--input-bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: inset 0px 3px 5px 0px #c5c5c5;
-  color: #525252;
+  color: var(--input-text-color);
   height: 4rem;
   font-size: large;
 }
@@ -64,16 +90,17 @@ header {
 .citySearch input {
   height: 85%;
   width: 65%;
-  background-color: #eaeaea;
+  background-color: var(--input-bg-color);
   border: none;
   font-weight: bold;
 }
 
 .reservations {
-  background-color: #f6f6f6;
+  background-color: var(--secondary-bg-color);
   padding: 1px 0 30px 0;
 }
-.reservations h1, .reservations p {
+.reservations h1,
+.reservations p {
   text-align: center;
 }
 .reservations h1 {
@@ -84,7 +111,7 @@ header {
 .reservations p {
   margin: 15px 25px 15px 25px;
   font-size: 1.1em;
-  color: #525252;
+  color: var(--primary-text-color);
 }
 
 .explorer {
@@ -93,8 +120,8 @@ header {
   margin-bottom: 1.25rem;
 }
 .explorer .btn-explorer {
-  color: white;
-  background: linear-gradient(357deg, #9356DC 4%, #FF79DA 96%);
+  color: var(--secondary-text-color);
+  background: var(--cal-color);
   border-radius: 25px;
   padding: 1rem 1.25rem 1rem 1.25rem;
   box-shadow: 0px 3px 5px 2px #c5c5c5;
@@ -106,7 +133,7 @@ header {
 }
 
 .function {
-  background-color: white;
+  background-color: var(--primary-bg-color);
   padding: 2rem 1rem 3rem 1rem;
 }
 .function__steps {
@@ -124,7 +151,7 @@ header {
 .function__btn {
   display: flex;
   align-items: center;
-  background-color: #f6f6f6;
+  background-color: var(--secondary-bg-color);
   border-radius: 1.5rem;
   flex-grow: 1;
   padding: 1.5rem 0;
@@ -133,33 +160,33 @@ header {
 }
 .function__btn:hover {
   transition: all 80ms ease-in;
-  background-color: #9356DC .function__btn:hover i;
+  background-color: var(--primary-color) .function__btn:hover i;
   background-color-transition: all 80ms ease-in;
-  background-color-color: #eaeaea;
+  background-color-color: var(--input-bg-color);
 }
 .function__btn::before {
   counter-increment: steps;
   content: counter(steps);
   position: relative;
   left: -0.8rem;
-  color: #FFF;
+  color: var(--secondary-text-color);
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #9356DC;
+  background-color: var(--primary-color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .function__btn i {
-  color: grey;
+  color: var(--grisMoyen);
   padding: 0 1rem;
   font-size: 1.3rem;
 }
 
 .restaurants {
   padding: 2rem 1.25rem 2rem 1.25rem;
-  background-color: #f6f6f6;
+  background-color: var(--secondary-bg-color);
 }
 .restaurants__list {
   display: flex;
@@ -169,23 +196,23 @@ header {
   height: 16.25rem;
   width: 100%;
   border-radius: 15px;
-  background-color: white;
+  background-color: var(--primary-bg-color);
   border-radius: 15px;
-  background-color: white;
-  box-shadow: 0px 3px 5px 2px #e9e9e9;
+  background-color: var(--primary-bg-color);
+  box-shadow: var(--shadow);
   margin-bottom: 1.25rem;
   text-decoration: none;
-  color: black;
+  color: var(--primary-text-color);
 }
 .restaurants__list__card__new {
   float: right;
 }
 .restaurants__list__card span {
-  background-color: #99E2D0;
+  background-color: var(--newButton-bg-color);
   margin: 11px -92px;
   padding: 5px 12px 5px 12px;
   position: absolute;
-  color: #008766;
+  color: var(--newButton-text-color);
   border-radius: 4px;
   font-size: 0.9em;
 }
@@ -217,7 +244,7 @@ header {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #353535;
+  background-color: var(--footer-bg-color);
   color: white;
   align-items: flex-start;
 }

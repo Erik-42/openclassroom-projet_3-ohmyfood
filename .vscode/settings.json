@@ -1,5 +1,6 @@
 {
-    "cSpell.words": [
-        "d'attente"
-    ]
+    "editor.defaultFormatter": "svipas.prettier-plus",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
 }

@@ -1,171 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr_FR">
+	<head>
+		<meta charset="utf-8" />
+		<title>OhMyFood - Accueil</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="description"
+			content="Site OhMyFood, Finis, les temps d'attente au restaurant !"
+		/>
+		<link rel="stylesheet" href="./css/style.css" type="text/css" />
+		<link rel="stylesheet" href="./scss/style.scss" type="text/css" />
 
-<head>
-    <meta charset="utf-8">
-    <title>OhMyFood - Accueil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./scss/style.scss" type="text/css">
+		<script
+			src="https://kit.fontawesome.com/4ec6d39a0c.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Shrikhand"
+			rel="stylesheet"
+		/>
 
-    <script src="https://kit.fontawesome.com/4ec6d39a0c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+		<!-- HTML Meta Tags -->
+		<title>OhMyFood - Accueil</title>
+		<meta
+			name="description"
+			content="Site OhMyFood, Finis, les temps d'attente au restaurant !"
+		/>
 
-  <!-- HTML Meta Tags -->
-  <title>OhMyFood - Accueil</title>
-  <meta name="description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
+		<!-- Facebook Meta Tags -->
+		<meta
+			property="og:url"
+			content="https://erik-42.github.io/openclassroom-ohmyfood/"
+		/>
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="OhMyFood - Accueil" />
+		<meta
+			property="og:description"
+			content="Site OhMyFood, Finis, les temps d'attente au restaurant !"
+		/>
+		<meta property="og:image" content="" />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://erik-42.github.io/openclassroom-ohmyfood/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="OhMyFood - Accueil">
-  <meta property="og:description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
-  <meta property="og:image" content="">
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta property="twitter:domain" content="erik-42.github.io" />
+		<meta
+			property="twitter:url"
+			content="https://erik-42.github.io/openclassroom-ohmyfood/"
+		/>
+		<meta name="twitter:title" content="OhMyFood - Accueil" />
+		<meta
+			name="twitter:description"
+			content="Site OhMyFood, Finis, les temps d'attente au restaurant !"
+		/>
+		<meta name="twitter:image" content="" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="erik-42.github.io">
-  <meta property="twitter:url" content="https://erik-42.github.io/openclassroom-ohmyfood/">
-  <meta name="twitter:title" content="OhMyFood - Accueil">
-  <meta name="twitter:description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
-  <meta name="twitter:image" content="">
+		<!-- Meta Tags Generated via https://www.opengraph.xyz -->
+	</head>
 
-  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        
-</head>
+	<body>
+		<header>
+			<a href="./index.html">
+				<img
+					src="./images/ohmyfood@2x.svg"
+					alt="logo OhMyFood - retour accueil"
+				/>
+			</a>
+		</header>
 
-<body>
-    
-    <header>
-        <a href="./index.html">
-            <img src="./images/ohmyfood@2x.svg" alt="logo OhMyFood - retour accueil">
-        </a>
-    </header>
+		<main>
+			<section>
+				<div class="citySearch">
+					<i class="fas fa-map-marker-alt"></i>
+					<input type="search" name="city" placeholder="Paris, Belleville" />
+				</div>
 
-    <main>
-    <section>
-        <div class="citySearch">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="search" name="city" placeholder="Paris, Belleville">
-        </div>
+				<article class="reservations">
+					<h1>Réservez le menu qui vous convient</h1>
+					<p>
+						Découvrez des restaurants d'exception, sélectionnés par nos soins.
+					</p>
+					<div class="explorer">
+						<button
+							class="btn-explorer"
+							onclick="window.location.href = '#listeRestaurants';"
+						>
+							Explorer nos restaurants
+						</button>
+					</div>
+				</article>
+			</section>
 
-        <article class="reservations">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <div class="explorer">
-                <button class="btn-explorer" onclick="window.location.href = '#listeRestaurants';">
-                    Explorer nos restaurants</button>
-            </div>
-        </article>
-    </section>
+			<section class="function">
+				<h2>Fonctionnement</h2>
+				<ol class="function__steps">
+					<li class="function__btn">
+						<i class="fa-solid fa-mobile-screen-button"></i>
+						<h3>Choisissez un restaurant</h3>
+					</li>
+					<li class="function__btn">
+						<i class="fa-solid fa-list"></i>
+						<h3>Composez votre menu</h3>
+					</li>
+					<li class="function__btn">
+						<i class="fas fa-store"></i>
+						<h3>Dégustez au restaurant</h3>
+					</li>
+				</ol>
+			</section>
 
-    <section class="function">
-        <h2>Fonctionnement</h2>
-        <ol class="function__steps"> 
-          <li class="function__btn">
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <h3>Choisissez un restaurant</h3>
-          </li>
-          <li class="function__btn">
-            <i class="fa-solid fa-list"></i>
-            <h3>Composez votre menu</h3>
-          </li>
-          <li class="function__btn">
-            <i class="fas fa-store"></i>
-            <h3>Dégustez au restaurant</h3>
-          </li>
-        </ol>
-      </section>
+			<section class="restaurants" id="listeRestaurants">
+				<h2>Restaurants</h2>
+				<div class="restaurants__list">
+					<a href="./pages/Resto_1.html" class="restaurants__list__card">
+						<div class="restaurants__list__card__new">
+							<span>Nouveau</span>
+						</div>
+						<img
+							src="./images/jay-wennington.jpg"
+							alt="La palette du goût Ménilmontant"
+						/>
+						<div class="restaurants__list__card__text">
+							<div>
+								<h3>La palette du goût</h3>
+								<p>Ménilmontant</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</div>
+					</a>
 
-    <section class="restaurants" id="listeRestaurants">
-        <h2>Restaurants</h2>
-        <div class="restaurants__list">
-            <a href="./pages/Resto_1.html" class="restaurants__list__card">
-                <div class="restaurants__list__card__new">
-                    <span>Nouveau</span>
-                </div>
-                <img src="./images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                    alt="La palette du goût Ménilmontant">
-                <div class="restaurants__list__card__text">
-                    <div>
-                        <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-            </a>
+					<a href="./pages/Resto_2.html" class="restaurants__list__card">
+						<div class="restaurants__list__card__new">
+							<span>Nouveau</span>
+						</div>
+						<img src="./images/stil.jpg" alt="La note enchantée Charonne" />
+						<div class="restaurants__list__card__text">
+							<div>
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</div>
+					</a>
 
-            <a href="./pages/Resto_2.html" class="restaurants__list__card">
-                <div class="restaurants__list__card__new">
-                    <span>Nouveau</span>
-                </div>
-                <img src="./images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée Charonne">
-                <div class="restaurants__list__card__text">
-                    <div>
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-            </a>
+					<a href="./pages/Resto_3.html" class="restaurants__list__card">
+						<img
+							src="./images/toa-heftiba.jpg"
+							alt="A la française Cité Rouge"
+						/>
+						<div class="restaurants__list__card__text">
+							<div>
+								<h3>A la française</h3>
+								<p>Cité Rouge</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</div>
+					</a>
 
-            <a href="./pages/Resto_3.html" class="restaurants__list__card">
-                <img src="./images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française Cité Rouge">
-                <div class="restaurants__list__card__text">
-                    <div>
-                        <h3>A la française</h3>
-                        <p>Cité Rouge</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./pages/Resto_4.html" class="restaurants__list__card">
-                <img src="./images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    alt="Le délice des sens Folie-Méricourt">
-                <div class="restaurants__list__card__text">
-                    <div>
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
-                    </div>
-                    <div>
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-</main>
-    <footer class="footer">
-        <div class="footer__title">
-          <a href="./index.html">ohmyfood</a>
-        </div>
-        <ul class="">
-          <li class="">
-            <i class="fas fa-utensils"></i>
-            <a href="#"> Proposer un restaurant</a> 
-          </li>
-          <li class="">
-              <i class="fas fa-hands-helping">
-              </i>
-              <a href="#">Devenir partenaire</a> 
-          </li>
-          <li class="">
-           <a href="#">Mentions légales</a> 
-          </li>
-          <li class="">
-           <a href="mailto:contact@ohmyfood.fr">Contact</a> 
-          </li>
-        </ul>
-    </footer>
-</body>
-
+					<a href="./pages/Resto_4.html" class="restaurants__list__card">
+						<img
+							src="./images/louis-hansel.jpg"
+							alt="Le délice des sens Folie-Méricourt"
+						/>
+						<div class="restaurants__list__card__text">
+							<div>
+								<h3>Le délice des sens</h3>
+								<p>Folie-Méricourt</p>
+							</div>
+							<div>
+								<i class="fas fa-heart"></i>
+							</div>
+						</div>
+					</a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__title">
+				<a href="./index.html">ohmyfood</a>
+			</div>
+			<ul class="">
+				<li class="">
+					<i class="fas fa-utensils"></i>
+					<a href="#"> Proposer un restaurant</a>
+				</li>
+				<li class="">
+					<i class="fas fa-hands-helping"> </i>
+					<a href="#">Devenir partenaire</a>
+				</li>
+				<li class="">
+					<a href="#">Mentions légales</a>
+				</li>
+				<li class="">
+					<a href="mailto:contact@ohmyfood.fr">Contact</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>

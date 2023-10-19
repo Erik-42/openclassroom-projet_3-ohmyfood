@@ -1,277 +1,298 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: Roboto, sans-serif;
-  font-size: 100%;
-  vertical-align: baseline;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Roboto, sans-serif;
+	font-size: 100%;
+	vertical-align: baseline;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-body{
-  scroll-behavior: smooth;
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+body {
+	scroll-behavior: smooth;
+	width: 100%;
 }
-a{
-  text-decoration: none;
-  color: inherit;
+a {
+	text-decoration: none;
+	color: inherit;
 }
-h4, p{
-  margin: 0%;
+h4,
+p {
+	margin: 0%;
 }
-ul, li{
-  text-decoration: none;
-  list-style-type: none;
-  padding: 0rem;
-  margin: 0rem;
+ul,
+li {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0rem;
+	margin: 0rem;
 }
-h1{
-  font-weight: 550px;
+h1 {
+	font-weight: 550px;
 }
 
-h2{
-  margin: 1rem 0 1rem 1rem;
-  font-size:1.5rem;
-  font-weight:550px;
-  text-align: start;
+h2 {
+	margin: 1rem 0 1rem 1rem;
+	font-size: 1.5rem;
+	font-weight: 550px;
+	text-align: start;
 }
-$violet: #9356DC;
-$pink: #FF79DA;
-$vertClair: #99E2D0;
-$vert: #008766;
-$darkness: #eaeaea;
-$grisClair: #f6f6f6;
-$inputColor: #525252;
-$white: white;
-$lightPink: #f5edff;
-$grisMoyen: #7e7e7e;
-$footer: #353535;
-$gradient: linear-gradient($pink, $violet);
-$gradient2: linear-gradient($violet, lighten($violet, 10));
-$shadow: 0px 3px 5px 2px #e9e9e9;
+:root {
+	--primary-color: #9356dc;
+	--secondary-color: #ff79da;
+	--tertiary-color: #99e2d0;
+	--primary-text-color: black;
+	--secondary-text-color: white;
+	--primary-bg-color: white;
+	--secondary-bg-color: #f6f6f6;
+	--footer-bg-color: #353535;
+	--primary-border-color: ;
+	--secondary-border-color: ;
+	--primary-hover-color: ;
+	--secondary-hover-color: ;
+	--newButton-bg-color: #99e2d0;
+	--newButton-text-color: #008766;
+	--input-bg-color: #eaeaea;
+	--input-text-color: #525252;
+	--gradient1: linear-gradient(#ff79da, #9356dc);
+	--gradient2: linear-gradient(#9356dc, lighten(#9356dc, 10));
+	--cal-color: linear-gradient(357deg, #9356dc 4%, #ff79da 96%);
+	--shadow: 0px 3px 5px 2px #e9e9e9;
+	--grisMoyen: #7e7e7e;
+}
 
-header{
-  padding-top: 20px;
-  padding-bottom: 10px;
-  text-align: center;
+// $violet: #9356DC;
+// $pink: #FF79DA;
+// $vertClair: #99E2D0;
+// $vert: #008766;
+// $darkness: #eaeaea;
+// $grisClair: #f6f6f6;
+// $inputColor: #525252;
+// $lightPink: #f5edff;
+// $footer: #353535;
+
+header {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 .citySearch {
-  background: $darkness;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0px 3px 5px 0px #c5c5c5;
-  color:$inputColor;
-  height: 4rem;
-  font-size: large;
-  i{
-    margin: 0rem 1.5rem 0rem 5rem;
-  }
-  input{
-    height: 85%;
-    width: 65%;
-    background-color: $darkness;
-    border: none;
-    font-weight: bold;
-  }
+	background: var(--input-bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0px 3px 5px 0px #c5c5c5;
+	color: var(--input-text-color);
+	height: 4rem;
+	font-size: large;
+	i {
+		margin: 0rem 1.5rem 0rem 5rem;
+	}
+	input {
+		height: 85%;
+		width: 65%;
+		background-color: var(--input-bg-color);
+		border: none;
+		font-weight: bold;
+	}
 }
 
-.reservations{
-  background-color: $grisClair;
-  padding: 1px 0 30px 0;
-  & h1, p{
-      text-align: center;
-  }
-  & h1{
-      font-weight: bolder;
-      font-size: 1.5em;
-      margin: 35px 50px 0px 50px;
-  }
-  & p{
-      margin: 15px 25px 15px 25px;
-      font-size: 1.1em;
-      color: $inputColor;
-  }
+.reservations {
+	background-color: var(--secondary-bg-color);
+	padding: 1px 0 30px 0;
+	& h1,
+	p {
+		text-align: center;
+	}
+	& h1 {
+		font-weight: bolder;
+		font-size: 1.5em;
+		margin: 35px 50px 0px 50px;
+	}
+	& p {
+		margin: 15px 25px 15px 25px;
+		font-size: 1.1em;
+		color: var(--primary-text-color);
+	}
 }
 
 @mixin hoverShadow {
-  transition: 0.5s ease-in-out;
-  opacity: 0.6;
+	transition: 0.5s ease-in-out;
+	opacity: 0.6;
 }
 
-.explorer{
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1.25rem;
-  .btn-explorer{
-      color: $white;
-      background: linear-gradient(357deg, $violet 4%, $pink 96%);
-      border-radius: 25px;
-      padding: 1rem 1.25rem 1rem 1.25rem;
-      box-shadow: 0px 3px 5px 2px #c5c5c5;
-      transition-duration: 0.5s;
-      &:hover{ 
-          @include hoverShadow();
-      }
-  }
+.explorer {
+	text-align: center;
+	margin-top: 2rem;
+	margin-bottom: 1.25rem;
+	.btn-explorer {
+		color: var(--secondary-text-color);
+		background: var(--cal-color);
+		border-radius: 25px;
+		padding: 1rem 1.25rem 1rem 1.25rem;
+		box-shadow: 0px 3px 5px 2px #c5c5c5;
+		transition-duration: 0.5s;
+		&:hover {
+			@include hoverShadow();
+		}
+	}
 }
 
 .function {
-  background-color: white;
- padding:2rem 1rem 3rem 1rem ;
-  &__steps {
-    counter-reset: steps;
-    display: flex;
-    gap: 2rem;
-    @media (max-width:992px) {
-      flex-direction: column;
-      padding: 1rem;
-    }
-  }
+	background-color: var(--primary-bg-color);
+	padding: 2rem 1rem 3rem 1rem;
+	&__steps {
+		counter-reset: steps;
+		display: flex;
+		gap: 2rem;
+		@media (max-width: 992px) {
+			flex-direction: column;
+			padding: 1rem;
+		}
+	}
 }
 
 .function__btn {
-  display: flex;
-  align-items: center;
-  background-color: $grisClair;
-  border-radius: 1.5rem;
-  flex-grow: 1;
-  padding: 1.5rem 0;
-  width: 100%;
-  box-shadow:#d5d5d5 0rem 0.2rem 0.5rem 0.1rem;
-  &:hover {
-      transition: all 80ms ease-in;
-      background-color: $violet
-        &  i {
-            transition: all 80ms ease-in;
-            color:$darkness;
-        }
-    }
-  &::before {
-    counter-increment:steps;
-    content: counter(steps);
-    position:relative;
-    left: -0.8rem;
-    
-    color:#FFF;
-    width: 1.5rem;
-    height: 1.5rem;
-  
-    background-color: $violet; 
-    border-radius:50%;
-  
-    display:flex;
-  justify-content:center;
-  align-items:center;
-  }
-    & i {
-      color: grey;
-      padding: 0 1rem;
-      font-size: 1.3rem;
-    }
-  }
-  
-.restaurants{
-  padding: 2rem 1.25rem 2rem 1.25rem;
-  background-color: $grisClair;
-  &__list{
-      display: flex;
-      flex-direction: column;
-      &__card{
-          height: 16.25rem;
-          width: 100%;
-          border-radius: 15px;
-          background-color: $white;
-          border-radius: 15px;
-          background-color : white;
-          box-shadow: $shadow;
-          margin-bottom: 1.25rem;
-          text-decoration: none;
-          color: black;
-          &__new{
-              float: right;
-          }
-          span{
-              background-color: $vertClair;
-              margin: 11px -92px;
-              padding: 5px 12px 5px 12px;
-              position: absolute;
-              color: $vert;
-              border-radius: 4px;
-              font-size: 0.9em;
-          }
-          img{
-              width: 100%;
-              object-fit: cover;
-              height: 180px;
-              border-radius: 15px 15px 0 0;
-          }
-          &__text{
-              margin: -10px 20px 0 10px;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-          h3{
-            margin: 1rem;
-          }    
-          p{
-            margin: 1rem;
-                  font-size: 1rem;
-                  margin-top: -10px;
-              }
-          }
-          &:hover{
-            @include hoverShadow();
-          }
-                }
-  }
+	display: flex;
+	align-items: center;
+	background-color: var(--secondary-bg-color);
+	border-radius: 1.5rem;
+	flex-grow: 1;
+	padding: 1.5rem 0;
+	width: 100%;
+	box-shadow: #d5d5d5 0rem 0.2rem 0.5rem 0.1rem;
+	&:hover {
+		transition: all 80ms ease-in;
+		background-color: var(--primary-color) & i {
+			transition: all 80ms ease-in;
+			color: var(--input-bg-color);
+		}
+	}
+	&::before {
+		counter-increment: steps;
+		content: counter(steps);
+		position: relative;
+		left: -0.8rem;
+
+		color: var(--secondary-text-color);
+		width: 1.5rem;
+		height: 1.5rem;
+
+		background-color: var(--primary-color);
+		border-radius: 50%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	& i {
+		color: var(--grisMoyen);
+		padding: 0 1rem;
+		font-size: 1.3rem;
+	}
 }
 
-.footer{
-  display: flex;
-  flex-direction: column;
-  background-color: $footer;
-  color:white;
-  align-items: flex-start;
-  @media (min-width: 767px){
-      align-items: center;
-      ul {
-          display: flex;
-          flex-direction: row;
-          width: auto;
-      }
-  }
-  .footer__title {
-    margin: 1rem;
-        a{
-          font-family: 'Shrikhand';
-          font-weight: 200;
-      }
-  }
-  ul{
-    margin: 0rem 1rem 1rem 1rem;
-      li{
-      font-size: 0.8rem;
-      font-weight: 500;
-      margin-bottom: 0.5rem;
-     }
-    i{
-    margin-right: 0.5rem;
-    width: 10px;
-      }
-    }
+.restaurants {
+	padding: 2rem 1.25rem 2rem 1.25rem;
+	background-color: var(--secondary-bg-color);
+	&__list {
+		display: flex;
+		flex-direction: column;
+		&__card {
+			height: 16.25rem;
+			width: 100%;
+			border-radius: 15px;
+			background-color: var(--primary-bg-color);
+			border-radius: 15px;
+			background-color: var(--primary-bg-color);
+			box-shadow: var(--shadow);
+			margin-bottom: 1.25rem;
+			text-decoration: none;
+			color: var(--primary-text-color);
+			&__new {
+				float: right;
+			}
+			span {
+				background-color: var(--newButton-bg-color);
+				margin: 11px -92px;
+				padding: 5px 12px 5px 12px;
+				position: absolute;
+				color: var(--newButton-text-color);
+				border-radius: 4px;
+				font-size: 0.9em;
+			}
+			img {
+				width: 100%;
+				object-fit: cover;
+				height: 180px;
+				border-radius: 15px 15px 0 0;
+			}
+			&__text {
+				margin: -10px 20px 0 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				h3 {
+					margin: 1rem;
+				}
+				p {
+					margin: 1rem;
+					font-size: 1rem;
+					margin-top: -10px;
+				}
+			}
+			&:hover {
+				@include hoverShadow();
+			}
+		}
+	}
 }
 
-  /* pages */
-  header i{
-    position: absolute;
-    left: 28px;
-    top: 28px;
-    font-size: 1rem;
-  }
-  .imgBanner{
-    height: 200px;
-    width: 100%;
-  }
+.footer {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--footer-bg-color);
+	color: white;
+	align-items: flex-start;
+	@media (min-width: 767px) {
+		align-items: center;
+		ul {
+			display: flex;
+			flex-direction: row;
+			width: auto;
+		}
+	}
+	.footer__title {
+		margin: 1rem;
+		a {
+			font-family: "Shrikhand";
+			font-weight: 200;
+		}
+	}
+	ul {
+		margin: 0rem 1rem 1rem 1rem;
+		li {
+			font-size: 0.8rem;
+			font-weight: 500;
+			margin-bottom: 0.5rem;
+		}
+		i {
+			margin-right: 0.5rem;
+			width: 10px;
+		}
+	}
+}
+
+/* pages */
+header i {
+	position: absolute;
+	left: 28px;
+	top: 28px;
+	font-size: 1rem;
+}
+.imgBanner {
+	height: 200px;
+	width: 100%;
+}
