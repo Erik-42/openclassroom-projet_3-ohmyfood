@@ -10,6 +10,7 @@ header i {
 	width: 100%;
 	z-index: -1;
 }
+
 .menu {
 	position: relative;
 	margin: -5rem 0 0 0;
@@ -26,6 +27,30 @@ header i {
 		font-size: 1.5rem;
 		color: var(--primary-text-color);
 	}
+
+	// .clickHeart:hover {
+	// 	content: "";
+	// 	&__fullHeart {
+	// 		opacity: 1;
+	// 		transition: 0.3s ease-in-out;
+	// 	}
+	// 	&__emptyHeart {
+	// 		opacity: 0;
+	// 		transition: 0.3s ease-in-out;
+	// 	}
+	// }
+
+	// .clickHeart__fullHeart {
+	// 	@include heart;
+	// 	background: var(--gradient1);
+	// 	-webkit-background-clip: text;
+	// 	-webkit-text-fill-color: transparent;
+	// 	opacity: 0;
+	// }
+	// .clickHeart__emptyHeart {
+	// 	@include heart;
+	// 	opacity: 1;
+	// }
 }
 .containerPlats {
 	width: 100%;
@@ -62,6 +87,12 @@ header i {
 			justify-content: space-between;
 			&__text {
 				font-size: 14px;
+				font-weight: 300;
+				color: var(--primary-text-color);
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				flex-shrink: 0;
 			}
 			&__price {
 				font-weight: bold;

@@ -69,6 +69,12 @@ header i {
 }
 .containerPlats__mets__infos__text {
   font-size: 14px;
+  font-weight: 300;
+  color: var(--primary-text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .containerPlats__mets__infos__price {
   font-weight: bold;
@@ -317,6 +323,34 @@ header {
 .restaurants__list__card:hover {
   transition: 0.5s ease-in-out;
   opacity: 0.6;
+}
+
+.clickHeart__fullHeart {
+  opacity: 1;
+}
+.clickHeart__emptyHeart {
+  opacity: 0;
+}
+
+.clickHeart__fullHeart {
+  font-size: 22px;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  background: var(--gradient1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.clickHeart__emptyHeart {
+  font-size: 22px;
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 1;
 }
 
 .footer {
