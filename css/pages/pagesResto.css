@@ -1,0 +1,226 @@
+header i {
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  font-size: 1rem;
+}
+
+.imgBanner {
+  height: 200px;
+  width: 100%;
+  z-index: -1;
+}
+
+.nameResto {
+  padding: 1rem 2rem 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nameResto h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+menuItem {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  border-radius: 0.75rem;
+  margin: 1rem 0;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  animation: itemAppear 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
+  transform: scale(0);
+  max-width: 100%;
+}
+menuItem__header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+menuItem__title {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+menuItem__description {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+menuItem__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+menuItem__confirmation {
+  background-color: var(--tertiary-color);
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.5s;
+}
+menuItem:hover menuItem__confirmation {
+  margin-right: -1rem;
+}
+menuItem__wrapIcon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+menuItem:hover menuItem__wrapIcon {
+  transform: rotate(0);
+}
+menuItem__icon {
+  color: var(--tertiary-color);
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.containerPlats__title {
+  position: relative;
+  font-weight: 300;
+  padding: 0 0 0.3rem 0;
+  margin: 1rem;
+}
+.containerPlats__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 0.2rem;
+  background-color: var(--tertiary-color);
+}
+.containerPlats__mets {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-bg-color);
+  border-radius: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  box-shadow: var(--shadow);
+}
+.containerPlats__mets__title {
+  margin: 1rem 0 0 1rem;
+}
+.containerPlats__mets__infos {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.containerPlats__mets__infos__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--primary-text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.containerPlats__mets__infos__price {
+  font-weight: bold;
+}
+
+.menuResto {
+  position: relative;
+  margin: -5rem 0 0 0;
+  background-color: var(--secondary-bg-color);
+  border-radius: 2rem 2rem 0 0;
+}
+
+.containerPlats {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .containerPlats {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.containerPlats__menu {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .containerPlats__menu {
+    width: 33%;
+  }
+}
+.containerPlats__menu__title {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-bottom: 0.3rem;
+  margin: 1rem 0;
+}
+.containerPlats__menu__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 0.2rem;
+  background-color: var(--tertiary-color);
+}
+
+.btn__command {
+  width: 10rem;
+}
+
+/* pages */
+
+/*# sourceMappingURL=pagesResto.css.map */

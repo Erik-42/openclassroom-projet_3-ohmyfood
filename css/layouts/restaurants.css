@@ -1,0 +1,10 @@
+.restaurants {
+  padding: 2rem 1.25rem 2rem 1.25rem;
+  background-color: var(--secondary-bg-color);
+}
+.restaurants__list {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=restaurants.css.map */

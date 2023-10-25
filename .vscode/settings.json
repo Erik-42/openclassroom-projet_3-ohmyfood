@@ -1,6 +1,12 @@
 {
-    "editor.defaultFormatter": "svipas.prettier-plus",
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true
+	"editor.defaultFormatter": "svipas.prettier-plus",
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
+	"[html]": {
+		"editor.defaultFormatter": "HookyQR.beautify"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+	}
 }

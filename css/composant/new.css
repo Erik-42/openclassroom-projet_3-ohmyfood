@@ -1,0 +1,14 @@
+.new {
+  float: right;
+}
+.new span {
+  background-color: var(--newButton-bg-color);
+  margin: 11px -92px;
+  padding: 5px 12px 5px 12px;
+  position: absolute;
+  color: var(--newButton-text-color);
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/*# sourceMappingURL=new.css.map */

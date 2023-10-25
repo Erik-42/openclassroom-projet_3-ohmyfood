@@ -1,0 +1,51 @@
+footer {
+  background-color: var(--footer-bg-color);
+  color: var(--secondary-text-color);
+  padding: 1rem;
+  & ul {
+    margin-top:1rem;
+    padding: 0;
+    list-style-type: none;
+  }
+  & li {
+    padding: 0.2rem;
+  }
+  & i 
+  {
+    padding-right:0.2rem;
+  }
+}
+
+.footer__title {
+  font-family:"Shrikhand", 'Roboto', 'sans-serif';
+  font-size:1.2rem;
+}
+.footer img{
+  width: 6rem;
+}
+.footer svg{
+  color: white;
+}
+@media (min-width: 768px) {
+    .footer{
+    display: flex;
+ 		flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+ 		padding: 3rem 3rem 0 0;
+    }
+    .footer__title{
+        padding: 0 0 0 2rem;
+    }
+	.footer ul {
+        display: flex ;
+			flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+			width: 100%;
+            margin: 1rem 4rem 1rem 0;
+		}
+        .footer li{
+            padding: 0.5rem;
+        }
+    }

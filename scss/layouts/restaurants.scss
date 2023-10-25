@@ -1,0 +1,8 @@
+.restaurants {
+	padding: 2rem 1.25rem 2rem 1.25rem;
+	background-color: var(--secondary-bg-color);
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+}

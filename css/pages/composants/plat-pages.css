@@ -1,0 +1,46 @@
+.containerPlats__title {
+  position: relative;
+  font-weight: 300;
+  padding: 0 0 0.3rem 0;
+  margin: 1rem;
+}
+.containerPlats__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: 0.2rem;
+  background-color: var(--tertiary-color);
+}
+.containerPlats__mets {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-bg-color);
+  border-radius: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  box-shadow: var(--shadow);
+}
+.containerPlats__mets__title {
+  margin: 1rem 0 0 1rem;
+}
+.containerPlats__mets__infos {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.containerPlats__mets__infos__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--primary-text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.containerPlats__mets__infos__price {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=plat-pages.css.map */

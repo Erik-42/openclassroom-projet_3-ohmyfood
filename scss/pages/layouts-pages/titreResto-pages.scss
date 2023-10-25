@@ -1,0 +1,41 @@
+// .menuResto {
+// 	position: relative;
+// 	margin: -5rem 0 0 0;
+// 	background-color: var(--secondary-bg-color);
+// 	border-radius: 2rem 2rem 0 0;
+.nameResto {
+	padding: 1rem 2rem 2rem 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nameResto h1 {
+	font-family: "Shrikhand", sans-serif;
+	font-size: 1.5rem;
+	color: var(--primary-text-color);
+}
+
+// .clickHeart:hover {
+// 	content: "";
+// 	&__fullHeart {
+// 		opacity: 1;
+// 		transition: 0.3s ease-in-out;
+// 	}
+// 	&__emptyHeart {
+// 		opacity: 0;
+// 		transition: 0.3s ease-in-out;
+// 	}
+// }
+
+// .clickHeart__fullHeart {
+// 	@include heart;
+// 	background: var(--gradient1);
+// 	-webkit-background-clip: text;
+// 	-webkit-text-fill-color: transparent;
+// 	opacity: 0;
+// }
+// .clickHeart__emptyHeart {
+// 	@include heart;
+// 	opacity: 1;
+// }
+//}
