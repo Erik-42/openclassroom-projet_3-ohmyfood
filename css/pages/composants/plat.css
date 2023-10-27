@@ -1,0 +1,35 @@
+.containerMenu__mets {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-bg-color);
+  border-radius: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  box-shadow: var(--shadow);
+  transition: 0.5s;
+}
+.containerMenu__mets__title {
+  margin: 1rem 0 0 1rem;
+}
+.containerMenu__mets__infos {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.containerMenu__mets__infos__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--primary-text-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.containerMenu__mets__infos__price {
+  font-weight: bold;
+}
+.containerMenu__mets:hover {
+  scale: 1.05;
+}
+
+/*# sourceMappingURL=plat.css.map */

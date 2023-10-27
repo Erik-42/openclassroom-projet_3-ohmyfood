@@ -1,11 +1,15 @@
-header i {
-	position: absolute;
-	left: 28px;
-	top: 28px;
-	font-size: 1rem;
-}
-.imgBanner {
-	height: 200px;
-	width: 100%;
-	z-index: -1;
+.header__title {
+	display: flex;
+	align-items: center;
+	margin: 1rem;
+	& a {
+		position: absolute;
+		left: 1rem;
+	}
+	&__imgBanner {
+		width: 100%;
+		z-index: -1;
+		max-height: 30rem;
+		object-fit: cover;
+	}
 }

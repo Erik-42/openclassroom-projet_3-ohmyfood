@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr_FR">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8" />
@@ -64,7 +64,7 @@
 	</header>
 
 	<main>
-		<section>
+		<section class="explore">
 			<div class="citySearch">
 				<i class="fas fa-map-marker-alt"></i>
 				<input type="search" name="city" placeholder="Paris, Belleville" />
@@ -104,72 +104,76 @@
 		<section class="restaurants" id="listeRestaurants">
 			<h2>Restaurants</h2>
 			<div class="restaurants__list">
-				<a href="./pages/Resto_1.html" class="restaurants__card">
-					<div class="new">
-						<span>Nouveau</span>
-					</div>
-					<img src="./images/jay-wennington.jpg" alt="La palette du goût Ménilmontant" />
-					<div class="restaurants__card__text">
-						<div>
-							<h3>La palette du goût</h3>
-							<p>Ménilmontant</p>
-						</div>
-						<div class="clickHeart">
-							<i class="heart far fa-heart fa-2x"></i>
-						</div>
-					</div>
-				</a>
 
-				<a href="./pages/Resto_2.html" class="restaurants__card">
-					<div class="new">
-						<span>Nouveau</span>
-					</div>
-					<img src="./images/stil.jpg" alt="La note enchantée Charonne" />
-					<div class="restaurants__card__text">
-						<div>
-							<h3>La note enchantée</h3>
-							<p>Charonne</p>
+				<div class="restaurants__card">
+					<a href="./pages/Resto_1.html">
+						<div class="label">
+							<span class="label__new">Nouveau</span>
 						</div>
-						<div>
+						<img src="./images/jay-wennington.jpg" alt="La palette du goût Ménilmontant" />
+						<div class="restaurants__card__resto">
+							<div class="restaurants__card__resto__text">
+								<h3>La palette du goût</h3>
+								<p>Ménilmontant</p>
+							</div>
 							<i class="heart far fa-heart fa-2x"></i>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
 
-				<a href="./pages/Resto_3.html" class="restaurants__card">
-					<img src="./images/toa-heftiba.jpg" alt="A la française Cité Rouge" />
-					<div class="restaurants__card__text">
-						<div>
-							<h3>A la française</h3>
-							<p>Cité Rouge</p>
+				<div class="restaurants__card">
+					<a href="./pages/Resto_2.html">
+						<div class="label">
+							<span class="label__new">Nouveau</span>
 						</div>
-						<div>
+						<img src="./images/stil.jpg" alt="La note enchantée Charonne" />
+						<div class="restaurants__card__resto">
+							<div class="restaurants__card__resto__text">
+								<h3>La note enchantée</h3>
+								<p>Charonne</p>
+							</div>
 							<i class="heart far fa-heart fa-2x"></i>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
 
-				<a href="./pages/Resto_4.html" class="restaurants__card">
-					<img src="./images/louis-hansel.jpg" alt="Le délice des sens Folie-Méricourt" />
-					<div class="restaurants__card__text">
-						<div>
-							<h3>Le délice des sens</h3>
-							<p>Folie-Méricourt</p>
-						</div>
-						<div>
+				<div class="restaurants__card">
+					<a href="./pages/Resto_3.html">
+						<img src="./images/toa-heftiba.jpg" alt="A la française Cité Rouge" />
+						<div class="restaurants__card__resto">
+							<div class="restaurants__card__resto__text">
+								<h3>A la française</h3>
+								<p>Cité Rouge</p>
+							</div>
 							<i class="heart far fa-heart fa-2x"></i>
 						</div>
-					</div>
-				</a>
+					</a>
+				</div>
+
+				<div class="restaurants__card">
+					<a href="./pages/Resto_4.html">
+						<img src="./images/louis-hansel.jpg" alt="Le délice des sens Folie-Méricourt" />
+						<div class="restaurants__card__resto">
+							<div class="restaurants__card__resto__text">
+								<h3>Le délice des sens</h3>
+								<p>Folie-Méricourt</p>
+							</div>
+							<i class="heart far fa-heart fa-2x"></i>
+						</div>
+					</a>
+				</div>
+
 			</div>
 		</section>
 	</main>
+
 	<footer class="footer">
 		<div class="footer__title">
 			<a href="./index.html">
 				<img src="./images/ohmyfood@2x-white.svg" alt="logo OhMyFood - retour accueil" />
 			</a>
 		</div>
+
 		<ul class="">
 			<li class="">
 				<i class="fas fa-utensils"></i>
@@ -187,6 +191,7 @@
 			</li>
 		</ul>
 	</footer>
+
 </body>
 
 </html>

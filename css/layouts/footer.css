@@ -1,7 +1,12 @@
 footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  align-items: self-start;
   background-color: var(--footer-bg-color);
   color: var(--secondary-text-color);
-  padding: 1rem;
 }
 footer ul {
   margin-top: 1rem;
@@ -10,14 +15,22 @@ footer ul {
 }
 footer li {
   padding: 0.2rem;
+  transition: 0.5s;
 }
-footer i {
+footer li:hover {
+  scale: 1.05;
+}
+footer li i {
   padding-right: 0.2rem;
 }
 
 .footer__title {
   font-family: "Shrikhand", "Roboto", "sans-serif";
   font-size: 1.2rem;
+  transition: 0.5s;
+}
+.footer__title:hover {
+  scale: 1.05;
 }
 
 .footer img {
@@ -26,30 +39,6 @@ footer i {
 
 .footer svg {
   color: white;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 3rem 3rem 0 0;
-  }
-  .footer__title {
-    padding: 0 0 0 2rem;
-  }
-  .footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    margin: 1rem 4rem 1rem 0;
-  }
-  .footer li {
-    padding: 0.5rem;
-  }
 }
 
 /*# sourceMappingURL=footer.css.map */

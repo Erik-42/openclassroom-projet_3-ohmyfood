@@ -1,8 +1,17 @@
-.function {
-  background-color: var(--primary-bg-color);
-  padding: 2rem 1rem 3rem 1rem;
-  max-width: 1024px;
-  margin: auto;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 2 |     @include layout();
+ *   |     ^^^^^^^^^^^^^^^^^
+ *   '
+ *   scss\layouts\function.scss 2:2  root stylesheet */
 
-/*# sourceMappingURL=function.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 2 \2502      @include layout();\d\a   \2502      ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layouts\\function.scss 2:2  root stylesheet";
+}

@@ -1,8 +1,9 @@
 @import "./layouts-pages/header-pages.scss";
-@import "./layouts-pages/titreResto-pages.scss";
+@import "./layouts-pages/nameResto-pages.scss";
 @import "./composants/check-pages.scss";
-@import "./composants/plat-pages.scss";
+@import "./composants/plat.scss";
 @import "./layouts-pages/menu-pages.scss";
+@import "./responsive/screenPages.scss";
 
 .btn__command {
 	width: 10rem;

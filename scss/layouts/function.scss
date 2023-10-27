@@ -1,6 +1,14 @@
 .function {
+	@include layout();
+	padding: 2rem 0 2rem 1rem;
 	background-color: var(--primary-bg-color);
-	padding: 2rem 1rem 3rem 1rem;
 	max-width: 1024px;
-	margin: auto;
+}
+.function__steps {
+	counter-reset: steps;
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }

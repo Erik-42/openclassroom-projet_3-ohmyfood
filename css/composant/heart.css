@@ -1,13 +1,8 @@
 .heart {
-  color: black;
   cursor: pointer;
 }
 .heart:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: var(--heart-color1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;

@@ -1,36 +1,25 @@
-.menuResto {
+.pageResto {
   position: relative;
   margin: -5rem 0 0 0;
   background-color: var(--secondary-bg-color);
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 3rem 3rem 0 0;
 }
 
-.containerPlats {
+.containerMenu {
+  width: 100%;
+  margin: 1rem;
+}
+.containerMenu__plat {
   width: 100%;
 }
-@media (min-width: 992px) {
-  .containerPlats {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-}
-.containerPlats__menu {
-  width: 100%;
-}
-@media (min-width: 992px) {
-  .containerPlats__menu {
-    width: 33%;
-  }
-}
-.containerPlats__menu__title {
+.containerMenu__plat__title {
   position: relative;
-  text-transform: uppercase;
   font-weight: 300;
-  padding-bottom: 0.3rem;
-  margin: 1rem 0;
+  padding: 0 0 0.3rem 0;
+  margin: 1rem;
+  text-transform: uppercase;
 }
-.containerPlats__menu__title::after {
+.containerMenu__plat__title::after {
   content: "";
   position: absolute;
   bottom: 0;

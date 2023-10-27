@@ -1,5 +1,4 @@
 header {
-	padding-top: 20px;
-	padding-bottom: 10px;
-	text-align: center;
+	@include layout();
+	padding: 1rem 0;
 }

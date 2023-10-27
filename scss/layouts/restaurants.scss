@@ -1,8 +1,18 @@
 .restaurants {
-	padding: 2rem 1.25rem 2rem 1.25rem;
+	@include layout();
+
 	background-color: var(--secondary-bg-color);
+	& h2 {
+		max-width: 1024px;
+		margin: auto;
+		padding: 0;
+	}
 	&__list {
-		display: flex;
-		flex-direction: column;
+		@include layout();
+		padding: 2rem 0;
+		gap: 2rem;
+	}
+	&__card:hover {
+		scale: 1.05;
 	}
 }

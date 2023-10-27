@@ -42,135 +42,137 @@
 
 <body>
 	<header>
-		<a href="../index.html"><i class="fa-solid fa-arrow-left header__arrow"></i>
+		<div class="header__title">
+			<a href="../index.html">
+				<i class="fa-solid fa-arrow-left fa-2x header__arrow"></i>
+			</a>
 			<img src="../images/ohmyfood@2x.svg" alt="logo OhMyFood - retour accueil" />
-		</a>
+		</div>
+		<img class="header__title__imgBanner" src="../images/jay-wennington.jpg" alt="Restaurant de qualité !" />
 	</header>
 
-	<img src="../images/jay-wennington.jpg" alt="Restaurant de qualité !" class="imgBanner" />
-
-	<main class="menuResto">
+	<main class="pageResto">
 		<div class="nameResto">
-			<title>
-				<h1>La Palette du gout</h1>
-			</title>
+			<h1>La Palette du gout</h1>
 			<div class="clickHeart">
 				<i class="heart far fa-heart fa-2x"></i>
-				<!-- <i class="fa-regular fa-heart clickHeart__emptyHeart"></i>
-				<i class="fas fa-heart clickHeart__fullHeart"></i> -->
-				<!-- <p class="heart">❤</p> -->
 			</div>
 		</div>
-		<div class="containerPlats">
-			<section class="containerPlats__menu">
-				<h2 class="containerPlats__menu__title">ENTREES</h2>
-				<article class="menuItem delay-1">
-					<div class="containerPlats__mets">
-						<h3 class="containerPlats__mets__title">Fricassée d'escargots</h3>
-						<div class="containerPlats__mets__infos">
-							<p class="containerPlats__mets__infos__text">Au piment d'Espelette</p>
-							<p class="containerPlats__mets__infos__price">25€</p>
-						</div>
-						<div class="menuItem__confirmation">
-							<div class="menuItem__wrapIcon">
-								<i class="menuItem__icon fas fa-check"></i>
-							</div>
+
+		<div class="containerMenu">
+
+			<section class="containerMenu__plat">
+				<h2 class="containerMenu__plat__title">Entrées</h2>
+
+				<!-- <div class="menuItem delay-1"> -->
+				<article class="containerMenu__plat__mets">
+					<h3 class="containerMenu__mets__title">Fricassée d'escargots</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Au piment d'Espelette</p>
+						<p class="containerMenu__mets__infos__price">25€</p>
+					</div>
+					<div class="menuItem__confirmation">
+						<div class="menuItem__wrapIcon">
+							<i class="menuItem__icon fas fa-check"></i>
 						</div>
 					</div>
 				</article>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">
-						Foie gras de canard mi-cuit
-					</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">
-							Et ses copeaux de truffe noire
-						</p>
-						<p class="containerPlats__mets__infos__price">35€</p>
-					</div>
+
+				<div class="menuItem delay-2">
+					<article class="containerMenu__mets">
+						<h3 class="containerMenu__mets__title">Foie gras de canard mi-cuit</h3>
+						<div class="containerMenu__mets__infos">
+							<p class="containerMenu__mets__infos__text">Et ses copeaux de truffe noire</p>
+							<p class="containerMenu__mets__infos__price">35€</p>
+						</div>
+					</article>
 				</div>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">
 						Œuf au plat
 					</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">
 							Assaisonné à la truffe sur lit de caviar
 						</p>
-						<p class="containerPlats__mets__infos__price">20€</p>
+						<p class="containerMenu__mets__infos__price">20€</p>
+					</div>
+				</article>
+			</section>
+			<section class="containerMenu__menu">
+				<h2 class="containerMenu__menu__title">Menu</h2>
+				<div class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Filet de bœuf aux herbes</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">
+							Accompagné de sa ribambelle de légumes
+						</p>
+						<p class="containerMenu__mets__infos__price">40€</p>
+					</div>
+				</div>
+				<div class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">
+						Parmentier de queue de bœuf
+					</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">
+							À la truffe noire sur sa purée de panais
+						</p>
+						<p class="containerMenu__mets__infos__price">35€</p>
+					</div>
+				</div>
+				<div class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Filet de turbot</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Aux agrumes</p>
+						<p class="containerMenu__mets__infos__price">44€</p>
 					</div>
 				</div>
 			</section>
-			<div class="containerPlats">
-				<h2 class="containerPlats__title">PLATS</h2>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">Filet de bœuf aux herbes</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">
-							Accompagné de sa ribambelle de légumes
-						</p>
-						<p class="containerPlats__mets__infos__price">40€</p>
+			<section class="containerMenu__menu">
+				<h2 class="containerMenu__menu__title">Désserts</h2>
+				<div class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Paris-Brest</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Revisité</p>
+						<p class="containerMenu__mets__infos__price">18€</p>
 					</div>
 				</div>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">
-						Parmentier de queue de bœuf
-					</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">
-							À la truffe noire sur sa purée de panais
-						</p>
-						<p class="containerPlats__mets__infos__price">35€</p>
-					</div>
-				</div>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">Filet de turbot</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">Aux agrumes</p>
-						<p class="containerPlats__mets__infos__price">44€</p>
-					</div>
-				</div>
-			</div>
-			<div class="containerPlats">
-				<h2 class="containerPlats__title">DESSERTS</h2>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">Paris-Brest</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">Revisité</p>
-						<p class="containerPlats__mets__infos__price">18€</p>
-					</div>
-				</div>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">
+				<div class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">
 						Macaron au chocolat d'exception
 					</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">
 							Et glace à la vanille de Madagascar
 						</p>
-						<p class="containerPlats__mets__infos__price">22€</p>
+						<p class="containerMenu__mets__infos__price">22€</p>
 					</div>
 				</div>
-				<div class="containerPlats__mets">
-					<h3 class="containerPlats__mets__title">Mousse au chocolat</h3>
-					<div class="containerPlats__mets__infos">
-						<p class="containerPlats__mets__infos__text">
+				<div class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Mousse au chocolat</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">
 							Au piment d'Espelette et à la truffe noire
 						</p>
-						<p class="containerPlats__mets__infos__price">23€</p>
+						<p class="containerMenu__mets__infos__price">23€</p>
 					</div>
 				</div>
-			</div>
-			<div class="cta">
-				<button class="cta__btn" onclick="window.location.href = '#listeRestaurants';">
-					<p class="btn__command">Commander</p>
-				</button>
-			</div>
+			</section>
+		</div>
+		<div class="cta">
+			<button class="cta__btn" onclick="window.location.href = '#listeRestaurants';">
+				<p class="btn__command">Commander</p>
+			</button>
+		</div>
 	</main>
 
 	<footer class="footer">
 		<div class="footer__title">
-			<a href="./index.html">ohmyfood</a>
+			<a href="./index.html">
+				<img src="../images/ohmyfood@2x-white.svg" alt="logo OhMyFood - retour accueil" />
+			</a>
 		</div>
 		<ul class="">
 			<li class="">

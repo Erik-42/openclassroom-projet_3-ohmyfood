@@ -1,14 +1,14 @@
-.new {
-  float: right;
+.label {
+  float: inline-end;
 }
-.new span {
+.label .label__new {
   background-color: var(--newButton-bg-color);
   margin: 11px -92px;
-  padding: 5px 12px 5px 12px;
+  padding: 0.3rem 0.75rem;
   position: absolute;
   color: var(--newButton-text-color);
   border-radius: 4px;
-  font-size: 0.9em;
+  font-size: 1rem;
 }
 
-/*# sourceMappingURL=new.css.map */
+/*# sourceMappingURL=label-new.css.map */

@@ -1,14 +1,17 @@
 .nameResto {
-  padding: 1rem 2rem 2rem 1rem;
+  width: 100%;
+  padding: 2rem 2rem 2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .nameResto h1 {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.5rem;
+  font-size: 28px;
   color: var(--primary-text-color);
 }
+.nameResto .clickHeart {
+  margin: 0 0 0 2rem;
+}
 
-/*# sourceMappingURL=titreResto-pages.css.map */
+/*# sourceMappingURL=nameResto-pages.css.map */

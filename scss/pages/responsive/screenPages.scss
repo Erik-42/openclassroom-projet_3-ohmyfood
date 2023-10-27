@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .nameResto {
+        display: flex;
+        justify-content: center;
+    }
+    .pageResto {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .containerMenu {
+        &__menu {
+            width: 70%;
+        }
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
