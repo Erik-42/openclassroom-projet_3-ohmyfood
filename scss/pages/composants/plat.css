@@ -1,4 +1,4 @@
-.containerMenu__plat__mets {
+.containerMenu__mets {
   height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,10 +15,10 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.containerMenu__plat__mets__title {
+.containerMenu__mets__title {
   margin: 1rem 0 0 1rem;
 }
-.containerMenu__plat__mets__infos {
+.containerMenu__mets__infos {
   margin: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,7 +27,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.containerMenu__plat__mets__infos__text {
+.containerMenu__mets__infos__text {
   font-size: 14px;
   font-weight: 300;
   color: var(--primary-text-color);
@@ -37,9 +37,9 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
-.containerMenu__plat__mets__infos__price {
+.containerMenu__mets__infos__price {
   font-weight: bold;
 }
-.containerMenu__plat__mets:hover {
+.containerMenu__mets:hover {
   scale: 1.05;
 }/*# sourceMappingURL=plat.css.map */
