@@ -1,36 +1,32 @@
 .containerMenu {
-	&__plat {
-		&__mets {
-			height: 4rem;
+	&__mets {
+		height: 4rem;
+		background-color: var(--primary-bg-color);
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		margin: 0 1rem 1rem 1rem;
+		box-shadow: var(--shadow);
+		transition: 0.5s;
+		cursor: pointer;
+		&__title {
+			margin: 1rem 0 0 1rem;
+		}
+		&__infos {
+			margin: 0 1rem;
 			display: flex;
-			flex-direction: column;
-			background-color: var(--primary-bg-color);
-			border-radius: 1rem;
-			margin: 0 1rem 1rem 1rem;
-			box-shadow: var(--shadow);
-			transition: 0.5s;
-			&__title {
-				margin: 1rem 0 0 1rem;
+			justify-content: space-between;
+			&__text {
+				font-size: 14px;
+				font-weight: 300;
+				color: var(--primary-text-color);
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				flex-shrink: 0;
 			}
-			&__infos {
-				margin: 0 1rem;
-				display: flex;
-				justify-content: space-between;
-				&__text {
-					font-size: 14px;
-					font-weight: 300;
-					color: var(--primary-text-color);
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
-					flex-shrink: 0;
-				}
-				&__price {
-					font-weight: bold;
-				}
-			}
-			&:hover {
-				scale: 1.05;
+			&__price {
+				font-weight: bold;
 			}
 		}
 	}

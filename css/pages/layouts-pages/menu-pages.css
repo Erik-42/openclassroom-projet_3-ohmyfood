@@ -5,9 +5,17 @@
   border-radius: 3rem 3rem 0 0;
 }
 
+@keyframes selected {
+  from {
+    transform: translateX(-5rem);
+    transition: 0.5s ease-in-out;
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
 .containerMenu {
   width: 100%;
-  margin: 1rem;
 }
 .containerMenu__plat {
   width: 100%;
@@ -18,6 +26,7 @@
   padding: 0 0 0.3rem 0;
   margin: 1rem;
   text-transform: uppercase;
+  width: 95%;
 }
 .containerMenu__plat__title::after {
   content: "";
@@ -27,6 +36,22 @@
   width: 4rem;
   height: 0.2rem;
   background-color: var(--tertiary-color);
+}
+.containerMenu__select {
+  position: absolute;
+  right: -5rem;
+}
+.containerMenu__mets:hover .containerMenu__mets__infos__price {
+  transform: translateX(-5rem);
+  transition: 0.5s ease-in-out;
+}
+.containerMenu:hover .containerMenu__select {
+  transform: translateX(-5rem);
+  transition: 0.5s ease-in-out;
+}
+
+.btn__command {
+  width: 10rem;
 }
 
 /*# sourceMappingURL=menu-pages.css.map */

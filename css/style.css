@@ -230,10 +230,7 @@ header {
   font-size: 1.3rem;
 }
 .function__btn:hover {
-  transition: all 80ms ease-in;
-  background-color: var(--primary-color) .function__btn:hover i;
-  background-color-transition: all 80ms ease-in;
-  background-color-color: var(--primary-color);
+  background-color: var(--primary-bg-color);
 }
 .function__btn:hover i {
   color: var(--primary-color);
@@ -444,7 +441,7 @@ header {
 
 .nameResto {
   width: 100%;
-  padding: 2rem 2rem 2rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -458,121 +455,27 @@ header {
   margin: 0 0 0 2rem;
 }
 
-menuItem {
-  background-color: white;
-  padding: 1rem;
-  display: flex;
-  border-radius: 0.75rem;
-  margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  cursor: pointer;
-  animation: itemAppear 0.6s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both;
-  transform: scale(0);
-  max-width: 100%;
-}
-menuItem__header {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  flex: 1;
-}
-menuItem__title {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-menuItem__description {
-  margin: 0;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-menuItem__price {
-  font-weight: bold;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 0.5rem;
-}
-menuItem__confirmation {
+.containerMenu__select {
+  width: 3.5rem;
+  height: inherit;
   background-color: var(--tertiary-color);
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
   display: flex;
-  align-items: center;
   justify-content: center;
-  transition-duration: 0.5s;
-}
-menuItem:hover menuItem__confirmation {
-  margin-right: -1rem;
-}
-menuItem__wrapIcon {
-  height: 1.6rem;
-  width: 1.6rem;
-  background-color: white;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
+  font-size: 25px;
+  color: var(--secondary-text-color);
 }
-menuItem:hover menuItem__wrapIcon {
-  transform: rotate(0);
-}
-menuItem__icon {
-  color: var(--tertiary-color);
-}
-
-.delay-0 {
-  animation-delay: 0s;
-}
-
-.delay-1 {
-  animation-delay: 0.1s;
-}
-
-.delay-2 {
-  animation-delay: 0.2s;
-}
-
-.delay-3 {
-  animation-delay: 0.3s;
-}
-
-.delay-4 {
-  animation-delay: 0.4s;
-}
-
-.delay-5 {
-  animation-delay: 0.5s;
-}
-
-.delay-6 {
-  animation-delay: 0.6s;
-}
-
-.delay-7 {
-  animation-delay: 0.7s;
-}
-
-.delay-8 {
-  animation-delay: 0.8s;
-}
-
 .containerMenu__mets {
   height: 4rem;
-  display: flex;
-  flex-direction: column;
   background-color: var(--primary-bg-color);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
   margin: 0 1rem 1rem 1rem;
   box-shadow: var(--shadow);
   transition: 0.5s;
+  cursor: pointer;
 }
 .containerMenu__mets__title {
   margin: 1rem 0 0 1rem;
@@ -594,9 +497,6 @@ menuItem__icon {
 .containerMenu__mets__infos__price {
   font-weight: bold;
 }
-.containerMenu__mets:hover {
-  scale: 1.05;
-}
 
 .pageResto {
   position: relative;
@@ -605,9 +505,17 @@ menuItem__icon {
   border-radius: 3rem 3rem 0 0;
 }
 
+@keyframes selected {
+  from {
+    transform: translateX(-5rem);
+    transition: 0.5s ease-in-out;
+  }
+  to {
+    transform: translateX(0rem);
+  }
+}
 .containerMenu {
   width: 100%;
-  margin: 1rem;
 }
 .containerMenu__plat {
   width: 100%;
@@ -618,6 +526,7 @@ menuItem__icon {
   padding: 0 0 0.3rem 0;
   margin: 1rem;
   text-transform: uppercase;
+  width: 95%;
 }
 .containerMenu__plat__title::after {
   content: "";
@@ -627,6 +536,22 @@ menuItem__icon {
   width: 4rem;
   height: 0.2rem;
   background-color: var(--tertiary-color);
+}
+.containerMenu__select {
+  position: absolute;
+  right: -5rem;
+}
+.containerMenu__mets:hover .containerMenu__mets__infos__price {
+  transform: translateX(-5rem);
+  transition: 0.5s ease-in-out;
+}
+.containerMenu:hover .containerMenu__select {
+  transform: translateX(-5rem);
+  transition: 0.5s ease-in-out;
+}
+
+.btn__command {
+  width: 10rem;
 }
 
 @media (min-width: 768px) {
@@ -650,10 +575,5 @@ menuItem__icon {
     width: 70%;
   }
 }
-.btn__command {
-  width: 10rem;
-}
-
-/* pages */
 
 /*# sourceMappingURL=style.css.map */
