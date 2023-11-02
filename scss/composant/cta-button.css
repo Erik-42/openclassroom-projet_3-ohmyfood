@@ -1,0 +1,19 @@
+.cta {
+  text-align: center;
+  margin: 1rem;
+}
+.cta .cta__btn {
+  color: var(--secondary-text-color);
+  background: var(--cal-color);
+  border-radius: 1.5rem;
+  padding: 1rem 1.25rem;
+  -webkit-box-shadow: 0 0.25rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0.25rem 0.6rem 0 rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.cta .cta__btn:hover {
+  background: var(--cal-color2);
+  -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.35);
+}/*# sourceMappingURL=cta-button.css.map */
