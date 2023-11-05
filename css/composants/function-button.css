@@ -14,7 +14,10 @@
   font-size: 1.3rem;
 }
 .function__btn:hover {
-  background-color: var(--primary-bg-color);
+  transition: all 80ms ease-in;
+  background-color: var(--primary-color) .function__btn:hover i;
+  background-color-transition: all 80ms ease-in;
+  background-color-color: var(--primary-color);
 }
 .function__btn:hover i {
   color: var(--primary-color);

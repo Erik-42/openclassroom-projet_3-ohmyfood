@@ -1,21 +1,28 @@
 .containerMenu {
 	&__mets {
-		height: 4rem;
-		background-color: var(--primary-bg-color);
-		border-radius: 1rem;
+		// height: 4rem;
 		display: flex;
 		flex-direction: column;
+		background-color: var(--primary-bg-color);
+		border-radius: 1rem;
 		margin: 0 1rem 1rem 1rem;
 		box-shadow: var(--shadow);
 		transition: 0.5s;
-		cursor: pointer;
+		// text-overflow: ellipsis;
+		// overflow: hidden;
+		padding: 1rem 0 1rem 1rem;
 		&__title {
-			margin: 1rem 0 0 1rem;
+			// margin: 1rem 0 0 1rem;
+		}
+		&h3 {
+			font-size: 18px;
 		}
 		&__infos {
-			margin: 0 1rem;
+			// margin: 0 1rem;
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
+			margin: 0.5rem 0 0 0;
 			&__text {
 				font-size: 14px;
 				font-weight: 300;
@@ -27,7 +34,35 @@
 			}
 			&__price {
 				font-weight: bold;
+				position: relative;
+				// right: -8rem;
 			}
 		}
 	}
+
+	&__mets:active {
+		.containerMenu__mets__infos__price {
+			animation: slidein 0.7s both 0.1s;
+		}
+		.containerMenu__mets__select {
+			animation: slidein 0.7s both 0.1s;
+		}
+	}
 }
+
+@keyframes slidein {
+	0% {
+		margin-right: 50px;
+	}
+	100% {
+		margin-right: 50px;
+	}
+}
+// @keyframes slideout {
+// 	0% {
+// 		margin-right: 0px;
+// 	}
+// 	100% {
+// 		margin-right: -50px;
+// 	}
+// }

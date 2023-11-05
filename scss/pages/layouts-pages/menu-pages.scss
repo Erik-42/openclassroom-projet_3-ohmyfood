@@ -5,16 +5,6 @@
     border-radius: 3rem 3rem 0 0;
 }
 
-@keyframes selected {
-    from {
-        transform: translateX(-5rem);
-        transition: 0.5s ease-in-out;
-    }
-    to {
-        transform: translateX(0rem);
-    }
-}
-
 .containerMenu {
     width: 100%;
     &__plat {
@@ -25,7 +15,7 @@
             padding: 0 0 0.3rem 0;
             margin: 1rem;
             text-transform: uppercase;
-            width: 95%;
+
             &::after {
                 content: "";
                 position: absolute;
@@ -37,22 +27,4 @@
             }
         }
     }
-    &__select {
-        position: absolute;
-        right: -5rem;
-    }
-    &__mets {
-        &:hover &__infos__price {
-            transform: translateX(-5rem);
-            transition: 0.5s ease-in-out;
-        }
-    }
-    &:hover &__select {
-        transform: translateX(-5rem);
-        transition: 0.5s ease-in-out;
-    }
-}
-
-.btn__command {
-    width: 10rem;
 }

@@ -1,6 +1,7 @@
-.containerMenu__select {
+.containerMenu__mets__select {
   width: 3.5rem;
   height: inherit;
+  // position: absolute;
   background-color: var(--tertiary-color);
   border-radius: 0 1rem 1rem 0;
   display: flex;
@@ -8,6 +9,7 @@
   align-items: center;
   font-size: 25px;
   color: var(--secondary-text-color);
-  &__icon {
-  }
+  position: relative;
+  right: 0rem;
+  // text-align: center;
 }

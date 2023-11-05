@@ -1,21 +1,21 @@
 .containerMenu__mets {
-  height: 4rem;
-  background-color: var(--primary-bg-color);
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  background-color: var(--primary-bg-color);
+  border-radius: 1rem;
   margin: 0 1rem 1rem 1rem;
   box-shadow: var(--shadow);
   transition: 0.5s;
-  cursor: pointer;
+  padding: 1rem 0 1rem 1rem;
 }
-.containerMenu__mets__title {
-  margin: 1rem 0 0 1rem;
+.containerMenu__metsh3 {
+  font-size: 18px;
 }
 .containerMenu__mets__infos {
-  margin: 0 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0 0 0;
 }
 .containerMenu__mets__infos__text {
   font-size: 14px;
@@ -28,6 +28,22 @@
 }
 .containerMenu__mets__infos__price {
   font-weight: bold;
+  position: relative;
+}
+.containerMenu__mets:active .containerMenu__mets__infos__price {
+  animation: slidein 0.7s both 0.1s;
+}
+.containerMenu__mets:active .containerMenu__mets__select {
+  animation: slidein 0.7s both 0.1s;
+}
+
+@keyframes slidein {
+  0% {
+    margin-right: 50px;
+  }
+  100% {
+    margin-right: 50px;
+  }
 }
 
 /*# sourceMappingURL=plat.css.map */

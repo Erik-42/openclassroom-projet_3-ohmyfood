@@ -7,13 +7,10 @@
 
 .containerMenu {
   width: 100%;
-  margin: 1rem;
 }
-
 .containerMenu__plat {
   width: 100%;
 }
-
 .containerMenu__plat__title {
   position: relative;
   font-weight: 300;
@@ -21,7 +18,6 @@
   margin: 1rem;
   text-transform: uppercase;
 }
-
 .containerMenu__plat__title::after {
   content: "";
   position: absolute;
@@ -30,6 +26,6 @@
   width: 4rem;
   height: 0.2rem;
   background-color: var(--tertiary-color);
-} 
+}
 
 /*# sourceMappingURL=menu-pages.css.map */
