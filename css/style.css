@@ -304,6 +304,7 @@ header {
 
 .heart {
   cursor: pointer;
+  margin: 0 0.2rem 0 0;
 }
 .heart:hover {
   background: var(--heart-color1);

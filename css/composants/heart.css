@@ -1,0 +1,12 @@
+.heart {
+  cursor: pointer;
+  margin: 0 0.2rem 0 0;
+}
+.heart:hover {
+  background: var(--heart-color1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=heart.css.map */
