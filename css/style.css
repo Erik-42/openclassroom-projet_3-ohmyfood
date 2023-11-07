@@ -624,6 +624,32 @@ header {
   height: 0.2rem;
 }
 
+@keyframes SlideUp {
+  from {
+    transform: translateY(4.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.containerMenu__plat > :nth-of-type(1) {
+  animation: SlideUp 0.8s ease-in-out;
+}
+
+.containerMenu__plat > :nth-of-type(2) {
+  animation: SlideUp 1s ease-in-out;
+}
+
+.containerMenu__plat > :nth-of-type(3) {
+  animation: SlideUp 1.2s ease-in-out;
+}
+
+.containerMenu__plat > :nth-of-type(4) {
+  animation: SlideUp 1.4s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .nameResto {
     display: flex;
