@@ -64,31 +64,6 @@
   }
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    transform-origin: center;
-  }
-}
-@-webkit-keyframes spin2 {
-  0% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    transform-origin: center;
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-}
-
 @keyframes loader {
   0% {
     visibility: visible;
@@ -100,5 +75,30 @@
   100% {
     opacity: 0;
     visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+@keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transform-origin: center;
   }
 }

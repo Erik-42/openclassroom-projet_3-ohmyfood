@@ -2,73 +2,192 @@
 <html lang="fr_FR">
 
 <head>
-    <meta charset="utf-8">
-    <title>OhMyFood - Accueil</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./scss/style.scss" type="text/css">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
 
-    <script src="https://kit.fontawesome.com/4ec6d39a0c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/4ec6d39a0c.js" crossorigin="anonymous"></script>
 
-  <!-- HTML Meta Tags -->
-  <title>OhMyFood - Accueil</title>
-  <meta name="description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
+	<!-- HTML Meta Tags -->
+	<title>OhMyFood - Restaurant À la française</title>
+	<meta name="description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !" />
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://erik-42.github.io/openclassroom-ohmyfood/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="OhMyFood - Accueil">
-  <meta property="og:description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
-  <meta property="og:image" content="">
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://erik-42.github.io/openclassroom-ohmyfood/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="OhMyFood - Accueil" />
+	<meta property="og:description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !" />
+	<meta property="og:image" content="" />
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="erik-42.github.io">
-  <meta property="twitter:url" content="https://erik-42.github.io/openclassroom-ohmyfood/">
-  <meta name="twitter:title" content="OhMyFood - Accueil">
-  <meta name="twitter:description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !">
-  <meta name="twitter:image" content="">
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="erik-42.github.io" />
+	<meta property="twitter:url" content="https://erik-42.github.io/openclassroom-ohmyfood/" />
+	<meta name="twitter:title" content="OhMyFood - Accueil" />
+	<meta name="twitter:description" content="Site OhMyFood, Finis, les temps d'attente au restaurant !" />
+	<meta name="twitter:image" content="" />
 
-  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        
+	<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 </head>
+
 <body>
-   
-    <header>
-        <a href="./index.html">
-            <img src="./src/assets/images/ohmyfood@2x.svg" alt="logo OhMyFood - retour accueil">
-        </a>
-    </header>
+	<header>
+		<div class="header__title">
+			<a href="../index.html">
+				<i class="fa-solid fa-arrow-left fa-2x header__arrow"></i>
+			</a>
+			<img src="../images/ohmyfood@2x.svg" alt="logo OhMyFood - retour accueil" />
+		</div>
+		<img class="header__title__imgBanner" src="../images/toa-heftiba.jpg" alt="Restaurant de qualité !" />
+	</header>
 
-    <main>
+	<main class="pageResto">
+		<div class="nameResto">
+			<h1>À la française</h1>
+			<div class="clickHeart">
+				<i class="heart far fa-heart fa-2x"></i>
+			</div>
+		</div>
 
+		<div class="containerMenu">
+			<section class="containerMenu__plat">
+				<h2 class="containerMenu__plat__title">Entrées</h2>
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Tartare de poulpe acidulé</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Aux zestes d'orange</p>
+						<p class="containerMenu__mets__infos__price">25€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
 
-    </main>
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Velouté de légumes d'antan</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Carotte, panais, topinambour</p>
+						<p class="containerMenu__mets__infos__price">35€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
 
-    <footer class="footer">
-        <div class="footer__title">
-          <a href="./index.html">ohmyfood</a>
-        </div>
-        <ul class="">
-          <li class="">
-            <i class="fas fa-utensils"></i>
-            <a href="#"> Proposer un restaurant</a> 
-          </li>
-          <li class="">
-              <i class="fas fa-hands-helping">
-              </i>
-              <a href="#">Devenir partenaire</a> 
-          </li>
-          <li class="">
-           <a href="#">Mentions légales</a> 
-          </li>
-          <li class="">
-           <a href="mailto:contact@ohmyfood.fr">Contact</a> 
-          </li>
-        </ul>
-    </footer>
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Soupe à l'oignon</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Revisitée</p>
+						<p class="containerMenu__mets__infos__price">20€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+			</section>
+			<section class="containerMenu__plat">
+				<h2 class="containerMenu__plat__title">PLats</h2>
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Coquilles Saint-Jacques</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Accompagnées d'une purée de panais</p>
+						<p class="containerMenu__mets__infos__price">40€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Magret de canard</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Et parmentier de pommes de terre</p>
+						<p class="containerMenu__mets__infos__price">35€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Pigeonneau d’Ille-et-Vilaine</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Sur son lit de gnocchis aux légumes</p>
+						<p class="containerMenu__mets__infos__price">44€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+			</section>
+			<section class="containerMenu__plat">
+				<h2 class="containerMenu__plat__title">Désserts</h2>
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Pétales de violettes glacés</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Et purée de noisettes</p>
+						<p class="containerMenu__mets__infos__price">18€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Fondant au chocolat</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Revisité</p>
+						<p class="containerMenu__mets__infos__price">22€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+
+				<article class="containerMenu__mets">
+					<h3 class="containerMenu__mets__title">Millefeuille croustillant</h3>
+					<div class="containerMenu__mets__infos">
+						<p class="containerMenu__mets__infos__text">Myrtilles et pâte d’amande</p>
+						<p class="containerMenu__mets__infos__price">23€</p>
+					</div>
+					<div class="containerMenu__select">
+						<i class="containerMenu__select__check fas fa-check-circle"></i>
+					</div>
+				</article>
+			</section>
+		</div>
+		<div class="cta">
+			<button class="cta__btn" onclick="window.location.href = '#listeRestaurants';">
+				<p class="btn__command">Commander</p>
+			</button>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__title">
+			<a href="./index.html">
+				<img src="../images/ohmyfood@2x-white.svg" alt="logo OhMyFood - retour accueil" />
+			</a>
+		</div>
+		<ul class="">
+			<li class="">
+				<i class="fas fa-utensils"></i>
+				<a href="#"> Proposer un restaurant</a>
+			</li>
+			<li class="">
+				<i class="fas fa-hands-helping"> </i>
+				<a href="#">Devenir partenaire</a>
+			</li>
+			<li class="">
+				<a href="#">Mentions légales</a>
+			</li>
+			<li class="">
+				<a href="mailto:contact@ohmyfood.fr">Contact</a>
+			</li>
+		</ul>
+	</footer>
 </body>
+
 </html>

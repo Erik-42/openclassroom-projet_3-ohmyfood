@@ -4,6 +4,37 @@
     background-color: var(--secondary-bg-color);
     border-radius: 3rem 3rem 0 0;
 }
+.header__title {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    & a {
+        position: absolute;
+        left: 1rem;
+    }
+    &__imgBanner {
+        width: 100%;
+        z-index: -1;
+        max-height: 30rem;
+        object-fit: cover;
+    }
+}
+
+.nameResto {
+    width: 100%;
+    padding: 2rem 2rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h1 {
+        font-family: "Shrikhand", sans-serif;
+        font-size: 28px;
+        color: var(--primary-text-color);
+    }
+    .clickHeart {
+        margin: 0 0 0 2rem;
+    }
+}
 
 .containerMenu {
     width: 100%;
@@ -17,7 +48,7 @@
             position: relative;
             font-weight: 300;
             padding: 0 0 0.3rem 0;
-            margin: 1rem 0 1rem 1rem;
+            margin: 1rem 0;
             text-transform: uppercase;
 
             &::after {
@@ -33,7 +64,6 @@
     }
 }
 
-//ANIMATION DE "ENTREES, PLATS, DESSERTS" (PAGE MENU)
 @keyframes SlideUp {
     from {
         transform: translateY(4.5rem);
@@ -44,7 +74,6 @@
         opacity: 1;
     }
 }
-//TIMELINE DE "ENTREES, PLATS, DESSERTS" (PAGE MENU)
 .containerMenu__plat > :nth-of-type(1) {
     animation: SlideUp 0.8s ease-in-out;
 }

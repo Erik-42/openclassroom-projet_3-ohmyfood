@@ -28,12 +28,11 @@ footer {
   transition: 0.5s;
   &:hover {
     scale: 1.05;
-    // transform: translateX(5rem);
   }
 }
 .footer img {
   width: 6rem;
 }
 .footer svg {
-  color: white;
+  color: var(--secondary-text-color);
 }
