@@ -1,0 +1,134 @@
+.containerMenu {
+    background-color: rgb(240, 240, 240);
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    &__plat {
+        width: 100%;
+        background-color: grey;
+        border: 1px solid black;
+        border-radius: 10px;
+        &__title {
+            position: relative;
+            font-weight: 300;
+            padding: 0 0 0.3rem 0;
+            margin: 1rem;
+            text-transform: uppercase;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 4rem;
+                height: 0.2rem;
+                background-color: greenyellow;
+            }
+        }
+    }
+}
+.containerMets {
+    background-color: rgb(173, 129, 129);
+    height: 4rem;
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    margin: 0 1rem 1rem 1rem;
+    box-shadow: 6px 5px 10px rgb(214, 214, 214);
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover .containerMets__select {
+        opacity: 1;
+        transform: translate(-50px);
+    }
+    &:hover .containerMets__check {
+        transform: rotate(360deg);
+    }
+}
+.containerMets__infos {
+    font-size: 15px;
+    font-weight: 300;
+}
+.containerMets__infos__title {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.containerMets__infos__description {
+    margin: 0.3rem 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.containerMets__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 50px;
+    height: 63px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+    top: 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+    & .containerMets__select__check {
+        color: #fff;
+        transition: transform 500ms ease-in-out;
+    }
+}
+.containerMets__select__price {
+}
+.containerMets__select__check {
+}
+// &__mets:active {
+//     .containerMenu__mets__infos__price {
+//         animation: slidein 0.7s both 0.1s;
+//     }
+//     .containerMenu__mets__select {
+//         animation: slidein 0.7s both 0.1s;
+//     }
+// }
+
+// @keyframes slidein {
+//     0% {
+//         margin-right: 50px;
+//     }
+//     100% {
+//         margin-right: 50px;
+//     }
+// }
+// @keyframes slideout {
+// 	0% {
+// 		margin-right: 0px;
+// 	}
+// 	100% {
+// 		margin-right: -50px;
+// 	}
+// }
+// .containerMenu__mets__select {
+//     width: 3.5rem;
+//     height: inherit;
+//     // position: absolute;
+//     background-color: var(--tertiary-color);
+//     border-radius: 0 1rem 1rem 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 25px;
+//     color: var(--secondary-text-color);
+//     position: relative;
+//     right: 0rem;
+//     // text-align: center;
+// }

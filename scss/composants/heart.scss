@@ -1,5 +1,6 @@
 .heart {
 	cursor: pointer;
+
 	&:hover {
 		background: var(--heart-color1);
 		-webkit-background-clip: text;
