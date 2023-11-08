@@ -231,7 +231,7 @@ header h1 {
   color: var(--primary-color);
 }
 .function__btn:hover::before {
-  scale: 1.5;
+  transform: scale(1.5);
 }
 .function__btn::before {
   counter-increment: steps;

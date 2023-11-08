@@ -14,15 +14,11 @@
 	}
 	&:hover {
 		transition: all 80ms ease-in;
-		// background-color: var(--primary-color) & i {
-		// 	transition: all 80ms ease-in;
-		// 	color: var(--primary-color);
-		// }
 		& i {
 			color: var(--primary-color);
 		}
 		&::before {
-			scale: 1.5;
+			transform: scale(1.5);
 		}
 	}
 	&::before {
