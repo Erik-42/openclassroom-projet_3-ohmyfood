@@ -226,12 +226,15 @@ header h1 {
 }
 .function__btn:hover {
   transition: all 80ms ease-in;
+  background-color: var(--primary-color) .function__btn:hover i;
+  background-color-transition: all 80ms ease-in;
+  background-color-color: var(--primary-color);
 }
 .function__btn:hover i {
   color: var(--primary-color);
 }
 .function__btn:hover::before {
-  transform: scale(1.5);
+  scale: 1.5;
 }
 .function__btn::before {
   counter-increment: steps;
@@ -665,7 +668,7 @@ header h1 {
   }
 }
 .btn__command {
-  width: 10rem;
+  width: 12rem;
 }
 
 /*# sourceMappingURL=style.css.map */
