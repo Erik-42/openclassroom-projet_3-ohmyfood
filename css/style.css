@@ -130,6 +130,9 @@ header {
   padding: 2rem 1rem;
   padding: 1rem 0;
 }
+header h1 {
+  display: none;
+}
 
 .function {
   width: 100%;
@@ -456,7 +459,7 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  padding: 2rem 0;
+  padding: 0;
 }
 
 .reservations {
@@ -464,16 +467,16 @@ header {
   padding: 2rem 0;
   width: 100%;
 }
-.reservations h1,
+.reservations h2,
 .reservations p {
   text-align: center;
 }
-.reservations h1 {
+.reservations h2 {
   font-weight: bolder;
   font-size: 1.5em;
 }
 .reservations p {
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
   font-size: 18px;
   color: var(--primary-text-color);
 }

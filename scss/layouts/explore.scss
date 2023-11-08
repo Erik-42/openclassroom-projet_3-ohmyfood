@@ -1,21 +1,21 @@
 .explore {
     @include layout();
-    padding: 2rem 0;
+    padding: 0;
 }
 .reservations {
     background-color: var(--secondary-bg-color);
     padding: 2rem 0;
     width: 100%;
-    & h1,
+    & h2,
     p {
         text-align: center;
     }
-    & h1 {
+    & h2 {
         font-weight: bolder;
         font-size: 1.5em;
     }
     & p {
-        padding: 2rem 0;
+        padding: 0 0 2rem 0;
         font-size: 18px;
         color: var(--primary-text-color);
     }

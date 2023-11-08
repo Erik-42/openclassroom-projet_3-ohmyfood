@@ -1,0 +1,44 @@
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  align-items: self-start;
+  background-color: var(--footer-bg-color);
+  color: var(--secondary-text-color);
+}
+footer ul {
+  margin-top: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+footer li {
+  padding: 0.2rem;
+  transition: 0.5s;
+}
+footer li:hover {
+  scale: 1.05;
+}
+footer li i {
+  padding-right: 0.2rem;
+}
+
+.footer__title {
+  font-family: "Shrikhand", "Roboto", "sans-serif";
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+.footer__title:hover {
+  scale: 1.05;
+}
+
+.footer img {
+  width: 6rem;
+}
+
+.footer svg {
+  color: var(--secondary-text-color);
+}
+
+/*# sourceMappingURL=footer.css.map */
