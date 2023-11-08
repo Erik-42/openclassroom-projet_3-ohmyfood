@@ -226,7 +226,6 @@ header h1 {
 }
 .function__btn:hover {
   transition: all 80ms ease-in;
-  background-color: var(--primary-color)
 }
 .function__btn:hover i {
   color: var(--primary-color);
