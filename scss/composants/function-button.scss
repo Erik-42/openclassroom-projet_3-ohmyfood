@@ -14,10 +14,10 @@
 	}
 	&:hover {
 		transition: all 80ms ease-in;
-		background-color: var(--primary-color) & i {
-			transition: all 80ms ease-in;
-			color: var(--primary-color);
-		}
+		// background-color: var(--primary-color) & i {
+		// 	transition: all 80ms ease-in;
+		// 	color: var(--primary-color);
+		// }
 		& i {
 			color: var(--primary-color);
 		}

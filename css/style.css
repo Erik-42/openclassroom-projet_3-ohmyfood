@@ -142,7 +142,7 @@ header h1 {
 .function__steps {
   counter-reset: steps;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -226,9 +226,6 @@ header h1 {
 }
 .function__btn:hover {
   transition: all 80ms ease-in;
-  background-color: var(--primary-color) .function__btn:hover i;
-  background-color-transition: all 80ms ease-in;
-  background-color-color: var(--primary-color);
 }
 .function__btn:hover i {
   color: var(--primary-color);
@@ -544,7 +541,7 @@ header h1 {
   bottom: 0;
   right: 0;
   width: 4.5rem;
-  border-radius: 0 1.25rem 1.25rem 0;
+  border-radius: 0 1rem 1rem 0;
   transform: translate(4.5rem);
   overflow: hidden;
   transition: 0.5s;
