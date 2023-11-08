@@ -1,15 +1,21 @@
-.containerMenu__select__check {
-  width: 100%;
-  height: inherit;
+.containerMenu__select {
   position: absolute;
   background-color: var(--tertiary-color);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 4.5rem;
   border-radius: 0 1rem 1rem 0;
+  transform: translate(4.5rem);
+  overflow: hidden;
+  transition: 0.5s;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+.containerMenu__select__check {
   font-size: 25px;
   color: var(--secondary-text-color);
-  right: 0rem;
   text-align: center;
 }
 
