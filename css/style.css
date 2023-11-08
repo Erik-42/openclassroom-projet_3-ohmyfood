@@ -98,9 +98,6 @@ footer li {
   padding: 0.2rem;
   transition: 0.5s;
 }
-footer li:hover {
-  scale: 1.05;
-}
 footer li i {
   padding-right: 0.2rem;
 }
@@ -109,9 +106,6 @@ footer li i {
   font-family: "Shrikhand", "Roboto", "sans-serif";
   font-size: 1.2rem;
   transition: 0.5s;
-}
-.footer__title:hover {
-  scale: 1.05;
 }
 
 .footer img {
@@ -176,9 +170,6 @@ header h1 {
   padding: 2rem 0;
   gap: 2rem;
 }
-.restaurants__card:hover {
-  scale: 1.05;
-}
 
 .citySearch {
   background: var(--input-bg-color);
@@ -235,9 +226,7 @@ header h1 {
 }
 .function__btn:hover {
   transition: all 80ms ease-in;
-  background-color: var(--primary-color) .function__btn:hover i;
-  background-color-transition: all 80ms ease-in;
-  background-color-color: var(--primary-color);
+  background-color: var(--primary-color)
 }
 .function__btn:hover i {
   color: var(--primary-color);
