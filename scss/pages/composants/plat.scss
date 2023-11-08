@@ -33,6 +33,7 @@
 			overflow: hidden;
 			width: 100%;
 			transition-duration: 0.5s;
+
 			&__text {
 				margin: 0 0 0 1rem;
 				font-size: 15px;
@@ -42,6 +43,7 @@
 				text-overflow: ellipsis;
 				white-space: nowrap;
 			}
+
 			&__price {
 				font-size: 15px;
 				font-weight: 700;
@@ -51,6 +53,7 @@
 			}
 		}
 	}
+
 	&__select {
 		position: absolute;
 		background-color: var(--tertiary-color);
