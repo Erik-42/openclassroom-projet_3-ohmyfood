@@ -7,6 +7,7 @@
     .header__title a {
         padding: 0 0 0 10rem;
     }
+
     .function__steps {
         display: flex;
         flex-direction: row;
@@ -37,5 +38,15 @@
     }
     .footer li {
         padding: 0.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .function {
+        padding: 2rem;
+    }
+}
+@media (min-width: 1080px) {
+    .function {
+        padding: 2rem 1rem;
     }
 }

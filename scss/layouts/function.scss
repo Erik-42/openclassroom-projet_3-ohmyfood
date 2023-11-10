@@ -1,6 +1,7 @@
 .function {
 	@include layout();
-	padding: 2rem 0 2rem 1rem;
+	// padding: 2rem 0 2rem 1rem;
+	padding: 2rem;
 	background-color: var(--primary-bg-color);
 	max-width: 1024px;
 }

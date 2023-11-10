@@ -39,5 +39,15 @@
     padding: 0.5rem;
   }
 }
+@media (max-width: 768px) {
+  .function {
+    padding: 2rem;
+  }
+}
+@media (min-width: 1080px) {
+  .function {
+    padding: 2rem 1rem;
+  }
+}
 
 /*# sourceMappingURL=screen.css.map */

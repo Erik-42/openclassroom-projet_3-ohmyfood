@@ -1,6 +1,6 @@
 .restaurants {
 	@include layout();
-
+	padding: 2rem;
 	background-color: var(--secondary-bg-color);
 	& h2 {
 		max-width: 1024px;
