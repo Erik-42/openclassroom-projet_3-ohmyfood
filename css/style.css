@@ -62,10 +62,6 @@ h2 {
   --primary-bg-color: white;
   --secondary-bg-color: #f6f6f6;
   --footer-bg-color: #353535;
-  --primary-border-color: ;
-  --secondary-border-color: ;
-  --primary-hover-color: ;
-  --secondary-hover-color: ;
   --newButton-bg-color: #99e2d0;
   --newButton-text-color: #008766;
   --input-bg-color: #eaeaea;
@@ -300,6 +296,7 @@ header h1 {
 .heart {
   cursor: pointer;
   margin: 0 0.2rem 0 0;
+  transition: all 1000ms cubic-bezier(0, 1.02, 0, 2.33) 0ms;
 }
 .heart:hover {
   background: var(--heart-color1);
