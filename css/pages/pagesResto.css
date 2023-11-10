@@ -80,7 +80,9 @@
 .header__title {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 1rem;
+  width: 100%;
 }
 .header__title a {
   position: absolute;
@@ -170,7 +172,6 @@
   .pageResto {
     display: flex;
     flex-direction: column;
-    width: 80%;
   }
   .containerMenu {
     display: flex;
@@ -178,10 +179,16 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0 20%;
+    padding: 0 15%;
+    gap: 2rem;
   }
   .containerMenu__menu {
     width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  .containerMenu {
+    flex-direction: row;
   }
 }
 .btn__command {
