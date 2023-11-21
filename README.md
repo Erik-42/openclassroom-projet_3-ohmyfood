@@ -20,18 +20,12 @@ You can click the Preview link to take a look at your changes.
 <!-- [![GitHub repo size][GitHub repo size-shield]][GitHub repo size-url] -->
 <!-- [![GitHub all releases][GitHub all releases-shield]][GitHub all releases-url] -->
 
-- 👋 Hi, I’m @ Erik Mesen
-- 👀 I’m interested in IT in general and the development of applications. I'm also very attracted by cyber security, OSINT and pentest but also by artificial intelligence.
-- 🌱 I’m currently learning at OpenClassRoom.
-- 💞️ I’m looking to collaborate on differeents frontend an backend projects in order to improve my skills.
-- 📫 How to reach me <a href="#contact">Contact</a>
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <h1>OhMyFood</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./images/Banner-Ohmyfood.png" alt="Bannière OhMyFood" width="400" height="150">
+    <img src="./images/Banner-Ohmyfood.webp" alt="Bannière OhMyFood" width="400" height="150">
   </a>
 </div>
 
@@ -61,6 +55,7 @@ Votre mission est de développer un site “mobile first” qui répertorie les 
 <p> </p>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=html&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/html.svg'> </a>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=css&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/css.svg'> </a>
+<a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=sass&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/sass.svg'> </a>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=github&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg'> </a>
 <a href= https://github.com/Erik-42?tab=repositories&q=&type=&language=figma&sort= > <img width ='32px' height='32px' src ='https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/figma.svg'> </a>
 

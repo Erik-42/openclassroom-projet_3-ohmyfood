@@ -1,4 +1,4 @@
-.function__btn {
+.howto__btn {
   display: flex;
   align-items: center;
   background-color: var(--secondary-bg-color);
@@ -8,21 +8,21 @@
   box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
-.function__btn i {
+.howto__btn i {
   color: var(--grisMoyen);
   padding: 0 1rem;
   font-size: 1.3rem;
 }
-.function__btn:hover {
+.howto__btn:hover {
   transition: all 80ms ease-in;
 }
-.function__btn:hover i {
+.howto__btn:hover i {
   color: var(--primary-color);
 }
-.function__btn:hover::before {
+.howto__btn:hover::before {
   transform: scale(1.5);
 }
-.function__btn::before {
+.howto__btn::before {
   counter-increment: steps;
   content: counter(steps);
   position: relative;

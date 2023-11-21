@@ -124,7 +124,7 @@ header h1 {
   display: none;
 }
 
-.function {
+.howto {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ header h1 {
   max-width: 1024px;
 }
 
-.function__steps {
+.howto__steps {
   counter-reset: steps;
   width: 100%;
   padding: 1rem 0;
@@ -200,13 +200,14 @@ header h1 {
   padding: 1rem 1.25rem;
   box-shadow: 0 0.25rem 0.6rem 0 rgba(0, 0, 0, 0.25);
   transition: 0.5s;
+  cursor: pointer;
 }
 .cta .cta__btn:hover {
   background: var(--cal-color2);
   box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.35);
 }
 
-.function__btn {
+.howto__btn {
   display: flex;
   align-items: center;
   background-color: var(--secondary-bg-color);
@@ -216,21 +217,21 @@ header h1 {
   box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
-.function__btn i {
+.howto__btn i {
   color: var(--grisMoyen);
   padding: 0 1rem;
   font-size: 1.3rem;
 }
-.function__btn:hover {
+.howto__btn:hover {
   transition: all 80ms ease-in;
 }
-.function__btn:hover i {
+.howto__btn:hover i {
   color: var(--primary-color);
 }
-.function__btn:hover::before {
+.howto__btn:hover::before {
   transform: scale(1.5);
 }
-.function__btn::before {
+.howto__btn::before {
   counter-increment: steps;
   content: counter(steps);
   position: relative;
@@ -413,7 +414,7 @@ header h1 {
   .header__title a {
     padding: 0 0 0 10rem;
   }
-  .function__steps {
+  .howto__steps {
     display: flex;
     flex-direction: row;
   }
@@ -446,13 +447,13 @@ header h1 {
   }
 }
 @media (max-width: 768px) {
-  .function {
+  .howto {
     padding: 2rem;
   }
 }
 @media (min-width: 1080px) {
-  .function {
-    padding: 2rem 1rem;
+  .howto {
+    padding: 2rem 0;
   }
 }
 .explore {
@@ -560,6 +561,7 @@ header h1 {
   margin: -5rem 0 0 0;
   background-color: var(--secondary-bg-color);
   border-radius: 3rem 3rem 0 0;
+  width: 100%;
 }
 
 .header__title {
@@ -657,6 +659,7 @@ header h1 {
   .pageResto {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
   .containerMenu {
     display: flex;
@@ -669,11 +672,6 @@ header h1 {
   }
   .containerMenu__menu {
     width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .containerMenu {
-    flex-direction: row;
   }
 }
 .btn__command {

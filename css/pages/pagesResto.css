@@ -75,6 +75,7 @@
   margin: -5rem 0 0 0;
   background-color: var(--secondary-bg-color);
   border-radius: 3rem 3rem 0 0;
+  width: 100%;
 }
 
 .header__title {
@@ -172,6 +173,7 @@
   .pageResto {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
   .containerMenu {
     display: flex;
@@ -184,11 +186,6 @@
   }
   .containerMenu__menu {
     width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .containerMenu {
-    flex-direction: row;
   }
 }
 .btn__command {

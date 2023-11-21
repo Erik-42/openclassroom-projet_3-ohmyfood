@@ -8,7 +8,7 @@
         padding: 0 0 0 10rem;
     }
 
-    .function__steps {
+    .howto__steps {
         display: flex;
         flex-direction: row;
     }
@@ -41,12 +41,12 @@
     }
 }
 @media (max-width: 768px) {
-    .function {
+    .howto {
         padding: 2rem;
     }
 }
 @media (min-width: 1080px) {
-    .function {
-        padding: 2rem 1rem;
+    .howto {
+        padding: 2rem 0;
     }
 }

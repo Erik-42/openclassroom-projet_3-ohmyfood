@@ -6,6 +6,7 @@
   .pageResto {
     display: flex;
     flex-direction: column;
+    width: 80%;
   }
   .containerMenu {
     display: flex;
@@ -18,11 +19,6 @@
   }
   .containerMenu__menu {
     width: 70%;
-  }
-}
-@media (min-width: 1200px) {
-  .containerMenu {
-    flex-direction: row;
   }
 }
 
